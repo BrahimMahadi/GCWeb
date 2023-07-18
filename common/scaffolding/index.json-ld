@@ -14,7 +14,7 @@
 		"en": "HTML elements used as is.",
 		"fr": "Les éléments HTML utilisé tel quel."
 	},
-	"modified": "2023-02-21",
+	"modified": "2023-07-18",
 	"componentName": "scaffolding",
 	"processing": "baseline",
 	"status": "stable",
@@ -29,6 +29,16 @@
 				"title": "Formulaires",
 				"language": "fr",
 				"path": "formulaires.html"
+			},
+			{
+				"title": "Embedded and interactive content",
+				"language": "en",
+				"path": "interactive-content-en.html"
+			},
+			{
+				"title": "Contenu intégré et interactif",
+				"language": "fr",
+				"path": "interactive-content-fr.html"
 			}
 		]
 	}
