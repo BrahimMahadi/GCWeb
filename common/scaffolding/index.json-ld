@@ -14,7 +14,7 @@
 		"en": "HTML elements used as is.",
 		"fr": "Les éléments HTML utilisé tel quel."
 	},
-	"modified": "2023-07-18",
+	"modified": "2023-10-19",
 	"componentName": "scaffolding",
 	"processing": "baseline",
 	"status": "stable",
@@ -39,6 +39,16 @@
 				"title": "Contenu intégré et interactif",
 				"language": "fr",
 				"path": "interactive-content-fr.html"
+			},
+			{
+				"title": "Table",
+				"language": "en",
+				"path": "table-en.html"
+			},
+			{
+				"title": "Table",
+				"language": "fr",
+				"path": "table-fr.html"
 			}
 		]
 	}
