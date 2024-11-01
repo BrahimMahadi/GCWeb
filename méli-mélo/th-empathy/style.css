@@ -88,20 +88,29 @@
 	border-radius: 10px;
 }
 
-.empathy.services-and-information .empathy.cards:hover {
+.empathy.services-and-information .empathy.cards:hover, .empathy.main-content .empathy.cards:hover {
     background-color: #6c3c9b;
     color: #fff;
     cursor: pointer;
 }
 
 /* Added to specifically target the link*/
-.empathy.services-and-information .empathy.cards:hover a {
+.empathy.services-and-information .empathy.cards:hover a, .empathy.main-content .empathy.cards:hover a {
     color: #fff;
 }
 
 .empathy.quiz-content {
 	background-color: #6c3c9b;
 	color: #fff;
+}
+
+/*
+ Might be able to accomplish something similar by adding the purple box first and floating it right -- doesn't work in a display flex
+*/
+@media screen and (max-width: 991px) {
+    .empathy.main-content {
+    order: 1;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -129,3 +138,4 @@
 	display: none;
 	}
 }
+
