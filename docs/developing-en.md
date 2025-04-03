@@ -16,29 +16,30 @@ Install NodeJS
 * Run code quality check: `grunt test`
 * Build production files: `grunt dist`
 * Compile and assemble méli-mélo:
-	* Run local: `grunt méli-mélo`
-	* Run from compiled dist: `grunt méli-mélo-runLocal`
-	* Run from wet-boew sites : `grunt méli-mélo-remote`
+  * Run local: `grunt méli-mélo`
+  * Run from compiled dist: `grunt méli-mélo-runLocal`
+  * Run from wet-boew sites : `grunt méli-mélo-remote`
 * Regenerate site web content: `grunt site-contents`
-	* `_data/components.json`
-	* `_data/sites.json`
-	* `_data/templates.json`
-	* `_wetboew-demos/**`
+  * `_data/components.json`
+  * `_data/sites.json`
+  * `_data/templates.json`
+  * `_wetboew-demos/**`
 
-## Run GCWeb wetsite locally
+## Run GCWeb website locally
 
-Ensure that you have builded GCWeb first
+Ensure that you have built GCWeb first
 
 After your are running docking container or the docker composer you will be able to access your local website at: `http://localhost:4000`
 
 Build Dockerfile locally
 
-```
+```shell
 docker build -t jekyll-with-env-options .
 ```
 
 Run your image
-```
+
+```shell
 grunt debug
 
 docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" --env JEKYLL_OPTIONS='--config _config.yml,_localJekyll.yml' jekyll-with-env-options
@@ -46,20 +47,20 @@ docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" --env JEKYLL_OPTIONS='
 
 ### alternative with docker-compose
 
-This version leverage the remote theme wet-beoew/gcweb-jekyll. This equivalent if you run with gh-pages through your own GCWeb repository.
+This version leverage the remote theme wet-boew/gcweb-jekyll. This equivalent if you run with gh-pages through your own GCWeb repository.
 
-```
+```shell
 grunt debug
 docker-compose up
 ```
 
 First time run: `docker-compose up --build`
 
-## Run the continous integration and deployment script locally
+## Run the continuos integration and deployment script locally
 
 Install ACT - [https://github.com/nektos/act](https://github.com/nektos/act)
 
-Github fork needed:
+GitHub fork needed:
 
 * [wet-boew/gcweb](https://github.com/wet-boew/gcweb)
 * [wet-boew/gcweb-jekyll](https://github.com/wet-boew/gcweb-jekyll)
@@ -69,11 +70,12 @@ Github fork needed:
 
 Run the continuous deployment script
 
-```
+```shell
 act -f deploy-gcweb -s my_token=<XXXXXXXXXXXXXX> -s my_username="<GITHUB USERNAME>" - my_email="<GITHUB HANDLE>@users.noreply.github.com" -a <GITHUB HANDLE>
 ```
 
 Where:
+
 * `<GITHUB USERNAME>`: Your name, like "John Doe"
 * `<GITHUB HANDLE>`: Your github id
 * `<XXXXXXXXXXXXXX>`: Your personal access token with access to public repository
@@ -82,7 +84,7 @@ Where:
 
 Pre-requites
 
-```
+```shell
 grunt debug
 docker-compose up
 
@@ -90,26 +92,19 @@ docker-compose up
 
 HTML link checker
 
-
-```
+```shell
 docker exec -i gcweb_jekyll rake
-```
-
-Bootlint test
-
-```
-grunt bootlint
 ```
 
 HTML lint
 
-```
+```shell
 grunt htmllint:all
 ```
 
 ## Build demo files
 
-Run the following command to generate files for a demo on https://github.com/ServiceCanada/wet-boew-demos where `[branchName]` refers to the branch name where your demo is hosted.
+Run the following command to generate files for a demo on <https://github.com/ServiceCanada/wet-boew-demos> where `[branchName]` refers to the branch name where your demo is hosted.
 
 `grunt demo --branch=[branchName]`
 
@@ -117,11 +112,12 @@ Run the following command to generate files for a demo on https://github.com/Ser
 
 You can make a commit to your site and it will get regenerated with the latest version of the jekyll theme. Alternatively, the following curl command will told github to regenerate your site.
 
-```
+```shell
 curl -u <GITHUB HANDLE>:<XXXXXXXXXXXXXX> -X POST https://api.github.com/repos/<GITHUB HANDLE>/<GITHUB REPOSITORY>/pages/builds
 ```
 
 Where:
+
 * `<GITHUB HANDLE>`: Your github id
 * `<XXXXXXXXXXXXXX>`: Your personal access token with access to public repository
 * `<GITHUB REPOSITORY>`: Your web site github repository, like "jekyll-website"

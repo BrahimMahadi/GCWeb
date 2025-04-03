@@ -18,8 +18,10 @@ module.exports = (grunt) ->
 		"test"
 		"Run code quality test"
 		[
+			"markdownlint"
 			"eslint:all"
 			"jsonlint:all"
+			"stylelint"
 			"sasslint:all"
 			"lintspaces:all"
 		]
@@ -29,7 +31,6 @@ module.exports = (grunt) ->
 		"dist"
 		"Build distribution files ready for production"
 		[
-			"checkDependencies"
 			"check-wet-version"
 			"test"
 			"jekyll-theme"
@@ -43,7 +44,6 @@ module.exports = (grunt) ->
 		"debug"
 		"Build a local working copy"
 		[
-			"checkDependencies"
 			"check-wet-version"
 			"jekyll-theme"
 			"jekyll-theme-runLocal"
@@ -78,7 +78,6 @@ module.exports = (grunt) ->
 		"méli-mélo"
 		"Build méli-mélo files and run it in-place"
 		[
-			"checkDependencies"
 			"check-wet-version"
 			"jekyll-theme"
 			"jekyll-theme-runLocal"
@@ -250,7 +249,7 @@ module.exports = (grunt) ->
 
 	@registerMultiTask(
 		"méli-mélo-build"
-		"Try to dynamically compile mélimelo",
+		"Try to dynamically compile mélimélo",
 		() ->
 			méliméloData = this.data
 			runType = méliméloData.runType
@@ -525,23 +524,17 @@ module.exports = (grunt) ->
 		banner: "/*!\n * @title Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
 				" * v<%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
 
-		# Placeholder modal for multimélo task
+		# Placeholder modal for mélimélo task
 		méliméloFolder: "méli-mélo-demos"
 		curMéliPack: "mélimélo.js"
 		curMéliLibs: [ ]
-
-		checkDependencies:
-			all:
-				options:
-					npmInstall: false
-					checkGitUrls: true
 
 		"check-wet-version":
 			src: ["<%= pkgWET.version %>", "<%= pkg.dependencies['wet-boew'] %>"]
 
 		"a11y-report":
 			all:
-				# Read those genrated json file only at runtime of the task
+				# Read those generated json file only at runtime of the task
 				sites: "_data/sites.json"
 				components: "_data/components.json"
 				templates: "_data/templates.json"
@@ -632,7 +625,7 @@ module.exports = (grunt) ->
 				]
 				dest: "<%= themeDist %>/css/theme.css"
 
-			# Placeholder modal for multimélo task
+			# Placeholder modal for mélimélo task
 			mélimélo:
 				options:
 					stripBanners: false
@@ -664,7 +657,7 @@ module.exports = (grunt) ->
 					]
 			#
 			# Use the name in the package.json as packageName in the theme
-			# used to build the URL and to ease the reuse of this build script for derivated theme
+			# used to build the URL and to ease the reuse of this build script for derivative themes
 			#
 			#definePckName:
 			#	options:
@@ -895,7 +888,7 @@ module.exports = (grunt) ->
 			all:
 				options:
 					implementation: sass,
-					includePaths: [
+					loadPaths: [
 						"./node_modules"
 						"./node_modules/wet-boew/node_modules"
 						if grunt.file.exists( "misc/variant/_variant-default.scss" ) then "src/variant" else "src/variant-default"
@@ -918,17 +911,9 @@ module.exports = (grunt) ->
 				expand: true
 				src: [
 					"<%= méliméloFolder %>/<%= curMéliPack %>/workdir/**/*.scss"
-#					"<%= méliméloFolder %>/méli-mélo-2021-1/workdir/**/*.scss"
-#					"<%= méliméloFolder %>/{<% _.forEach(curMéliLibs, function(lib) { %><%- lib %>,<% }); %>}/**/*.scss"
 				]
 				dest: ""
-#				dest: "méli-mélo/méli-mélo-2021-1/css"
-#				dest: "méli-mélo/<%= curMéliPack %>/<%= curMéliPack %>.css"
 				ext: ".css"
-#				rename: (dest, src) ->
-#					console.log( src )
-#					console.log( dest )
-#					return dest
 
 		postcss:
 			options:
@@ -943,6 +928,24 @@ module.exports = (grunt) ->
 				]
 				dest: "<%= themeDist %>/css"
 				expand: true
+
+		stylelint:
+			options:
+				configFile: "stylelint.config.js"
+
+			css:
+				src: [
+					"**/*.css"
+					"!**/*.min.css"
+					"!méli-mélo/compilation-gelé/"
+					"!node_modlules/"
+				]
+
+			scss:
+				src: [
+					"**/*.scss"
+					"!node_modlules"
+				]
 
 		cssmin:
 			theme:
@@ -1017,57 +1020,6 @@ module.exports = (grunt) ->
 				src: [
 					"~sites/**/*.html"
 					"!~sites/wetboew-demos/*"
-				]
-
-		bootlint:
-			all:
-				options:
-					stoponerror: true
-					stoponwarning: true
-					showallerrors: true
-					relaxerror: [
-						# We recommend handling this through the server headers so it never appears in the markup
-						"W002" # `<head>` is missing X-UA-Compatible `<meta>` tag that disables old IE compatibility modes
-						# TODO: The rules below should be resolved
-						"E013" # Only columns (`.col-*-*`) may be children of `.row`s
-						"E014" # Columns (`.col-*-*`) can only be children of `.row`s or `.form-group`s
-						"E031" # Glyphicon classes must only be used on elements that contain no text content and have no child elements.
-						"E023" # `.panel-body` must have a `.panel` or `.panel-collapse` parent
-						"E024" # `.panel-heading` must have a `.panel` parent
-						"W010" # Using `.pull-left` or `.pull-right` as part of the media object component is deprecated as of Bootstrap v3.3.0. Use `.media-left` or `.media-right` instead.
-						"E032" # `.modal-content` must be a child of `.modal-dialog`
-						"W009" # Using empty spacer columns isn't necessary with Bootstrap's grid. So instead of having an empty grid column with `class="col-xs-12"` , just add `class="col-xs-offset-12"` to the next grid column.
-						"E012" # `.input-group` and `.col-*-*` cannot be used directly on the same element. Instead, nest the `.input-group` within the `.col-*-*`
-						"E017" # GCWeb wants to support explicit labels when using checkbox inputs under the .gc-chckbxrdio .checkbox classes
-						"E018" # GCWeb wants to support explicit labels when using radio inputs under the .gc-chckbxrdio .radio classes
-					]
-				src: [
-					"~sites/**/*.html"
-					# Ignore wet-boew demos files
-					"!~sites/wetboew-demos/*"
-					# Ignore HTML fragments used for the menus
-					"!~sites/**/assets/*.html"
-					"!~sites/**/ajax/*.html"
-					# Ignore deprecated page as it is just for testing
-					"!~sites/**/deprecated-*.html"
-					# Ignore Bootstrap 4 test page
-					"!~sites/**/bootstrap-4.html"
-				]
-			bootstrap4:
-				options:
-					stoponerror: true
-					stoponwarning: true
-					showallerrors: true
-					relaxerror: [
-						# We recommend handling this through the server headers so it never appears in the markup
-						"W002" # `<head>` is missing X-UA-Compatible `<meta>` tag that disables old IE compatibility modes
-						# Ignore jQuery missing warning
-						"W005" # Unable to locate jQuery, which is required for Bootstrap's JavaScript plugins to work; however, you might not be using Bootstrap's JavaScript
-						# Ignore Bootstrap 4 usage warning
-						"W015" # Detected what appears to be Bootstrap v4 or later. This version of Bootlint only supports Bootstrap v3.
-					]
-				src: [
-					"~sites/**/bootstrap-4.html"
 				]
 
 		watch:
@@ -1168,6 +1120,17 @@ module.exports = (grunt) ->
 				]
 				expand: true
 
+		markdownlint:
+			all:
+				options:
+					config: grunt.file.readJSON(".markdownlint.json")
+				src: [
+					'**/*.md'
+					'!node_modules/**/*.md'
+					'!_wetboew-demos/**/*.md',
+					'!~sites/**/*.md'
+				]
+
 	require( "load-grunt-tasks" )( grunt )
 
 	require( "time-grunt" )( grunt )
@@ -1229,7 +1192,7 @@ getA11yReportSummary = ( fname, componentName, reportData, wcag21AAList, refTest
 		# Reporting from a Test Requirement perspective
 		#
 
-		# Create the test requirement placeholder if required or retreive it
+		# Create the test requirement placeholder if required or retrieve it
 		refTestRequirements[ testId ] = { } if !refTestRequirements[ testId ]
 		tRequirementDetail = refTestRequirements[ testId ]
 
@@ -1325,7 +1288,7 @@ getAcrSummary = ( fname, componentName, reportData, wcag21AAList, refConformityR
 		# Reporting from a conformity perspective
 		#
 
-		# Create the test requirement placeholder if required or retreive it
+		# Create the test requirement placeholder if required or retrieve it
 		refConformityRequirements[ reqId ] = { } if !refConformityRequirements[ reqId ]
 		tConformityDetail = refConformityRequirements[ reqId ]
 
