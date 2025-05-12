@@ -564,7 +564,7 @@
 					"fr": "Mars 2024 - Stabilisation de la composante."
 				},
 				{
-					"en": "August 2023 - Adding possibility to customize the background color.",
+					"en": "August 2023 - Adding possibility to customize the background colour.",
 					"fr": "Août 2023 - Ajout de la possibilité de personnaliser la couleur de fond."
 				},
 				{
@@ -600,7 +600,7 @@
 			},
 			"notes": {
 				"en": [
-					"When customizing the background color, the component will automatically apply the correct color to the text: <code>#FFFFFF</code> for dark colours, <code>#333333</code> for light colours, <code>#000000</code> for colours in-between."
+					"When customizing the background colour, the component will automatically apply the correct colour to the text: <code>#FFFFFF</code> for dark colours, <code>#333333</code> for light colours, <code>#000000</code> for colours in-between."
 				],
 				"fr": [
 					"Lorsque la couleur de fond est personnalisée, la composante appliquera automatiquement la bonne couleur au texte : <code>#FFFFFF</code> pour les couleurs sombres, <code>#333333</code> pour les couleurs claires, <code>#000000</code> pour les couleurs intermédiaires."
@@ -1202,10 +1202,10 @@
 		"en": "This component is for the minister or institutional head pattern on the institutional landing page.",
 		"fr": "Ce composant est destiné au modèle du ministre ou du chef d'institution sur la page d'accueil de l'institution."
 	},
-	"modified": "2024-03-11",
+	"modified": "2025-04-07",
 	"componentName": "gc-minister",
 	"status": "stable",
-	"version": "1.0",
+	"version": "1.1",
 	"pages": {
 		"examples": [
 			{
@@ -1268,7 +1268,7 @@
 				"en": "https://design.canada.ca/mandatory-templates/institutional-profile-pages.html",
 				"fr": "https://conception.canada.ca/modeles-obligatoire/pages-profil-institutionnel.html"
 			},
-			"iteration": "_:iteration_minister_1",
+			"iteration": "_:iteration_minister_2",
 			"example": [
 				{
 					"en": { "href": "gc-minister-en.html", "text": "Minister or institutional head" },
@@ -1284,9 +1284,14 @@
 				}
 			],
 			"implementation": [
-				"_:implement_minister"
+				"_:implement_minister",
+				"_:implement_minister_v1_to_v1.1"
 			],
 			"history": [
+				{
+					"en": "April 2025 - Fixed issue where links were not clickable in mobile view.",
+					"fr": "Avril 2025 - Problème résolu où les liens n'étaient pas cliquables dans la vue mobile."
+				},
 				{
 					"en": "March 2024 - Initial implementation of the variation.",
 					"fr": "Mars 2024 - Implémentation initiale de la variante."
@@ -1297,7 +1302,7 @@
 	"implementation": [
 		{
 			"@id": "_:implement_minister",
-			"iteration": "_:iteration_minister_1",
+			"iteration": "_:iteration_minister_2",
 			"name": {
 				"en": "Standard",
 				"fr": "Standard"
@@ -1331,7 +1336,7 @@
 					{
 						"@type": "source-code",
 						"description": "Code sample with image:",
-						"code": "<section class=\"gc-minister\">\n\t<h2>Minister</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-5\">\n\t\t\t\t\t<img src=\"[image url]\" alt=\"The Honourable [Minister name]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-7\">\n\t\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+						"code": "<section class=\"gc-minister\">\n\t<h2>Minister</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t<img src=\"[image url]\" alt=\"The Honourable [Minister name]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
 					},
 					{
 						"@type": "source-code",
@@ -1343,13 +1348,33 @@
 					{
 						"@type": "source-code",
 						"description": "Exemple de code avec image :",
-						"code": "<section class=\"gc-minister\">\n\t<h2>Ministre</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">L'honorable [prénom et nom de famille]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-5\">\n\t\t\t\t\t<img src=\"[url de l'image]\" alt=\"L'honorable [prénom et nom de famille]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-7\">\n\t\t\t\t\t<p>[Titre officiel du ministre]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Lettre de mandat</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Dossier d'information</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+						"code": "<section class=\"gc-minister\">\n\t<h2>Ministre</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">L'honorable [prénom et nom de famille]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t<img src=\"[url de l'image]\" alt=\"L'honorable [prénom et nom de famille]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Titre officiel du ministre]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Lettre de mandat</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Dossier d'information</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
 					},
 					{
 						"@type": "source-code",
 						"description": "Exemple de code sans image :",
 						"code": "<section class=\"gc-minister\">\n\t<h2>Ministre</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<h3><a href=\"#\">The Honourable [Minister 3 name]</a></h3>\n\t\t\t<p>[Titre officiel du ministre]</p>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"\">Lettre de mandat</a></li>\n\t\t\t\t<li><a href=\"\">Dossier d'information</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</section>"
 					}
+				]
+			}
+		},
+		{
+			"@id": "_:implement_minister_v1_to_v1.1",
+			"iteration": "_:iteration_minister_2",
+			"name": {
+				"en": "Migrate component from version 1 to 1.1",
+				"fr": "Migrer le composant de la version 1 vers la version 1.1"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers migrating from version 1 to 1.1 of the component.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui migrent de la version 1 vers la version 1.1 de la composante."
+			},
+			"instructions": {
+				"en": [
+					"Add the class <code>col-xs-12</code> to the <code>col-md-5</code> and <code>col-md-7</code> elements (containing the image and description respectively) in order to fix issue where links are not clickable in mobile view"
+				],
+				"fr": [
+					"Ajoutez la classe col-xs-12 aux éléments col-md-5 et col-md-7 (contenant respectivement l'image et la description) afin de résoudre le problème où les liens ne sont pas cliquables dans la vue mobile"
 				]
 			}
 		}
@@ -1373,6 +1398,28 @@
 					"code": "<section class=\"gc-minister\">\n\t<h2>Minister</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<h3><a href=\"#\">The Honourable [Minister 3 name]</a></h3>\n\t\t\t<p>[Official title]</p>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</section>"
 				}
 			]
+		},
+		{
+			"@id": "_:iteration_minister_2",
+			"name": "Minister - Iteration 2",
+			"date": "2025-04",
+			"additions": [
+				"Add css class to fix issue where links are not clickable in mobile view. Bump component version number to 1.1"
+			],
+			"detectableBy": ".gc-minister .col-xs-12.col-md-5",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample with image",
+					"code": "<section class=\"gc-minister col-xs-12 col-md-5\">\n\t<h2>Minister</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t<img src=\"[image url]\" alt=\"The Honourable [Minister name]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+				},
+				{
+					"@type": "source-code",
+					"description": "Code sample without image",
+					"code": "<section class=\"gc-minister col-xs-12 col-md-5\">\n\t<h2>Minister</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<h3><a href=\"#\">The Honourable [Minister 3 name]</a></h3>\n\t\t\t<p>[Official title]</p>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</section>"
+				}
+			]
 		}
 	],
 	"changesets": [
@@ -1380,7 +1427,7 @@
 			"@id": "_:cs_minister",
 			"name": "Minister or institutional head",
 			"status": "stable",
-			"baseOnIteration": "_:iteration_minister_1",
+			"baseOnIteration": "_:iteration_minister_2",
 			"detectableBy": ".gc-minister",
 			"layout": "Each minister takes up half the container. The image (if available) is on the left",
 			"semantic": "section ((h3 a) + img + p + (ul > li))",
@@ -1418,10 +1465,10 @@
 		"en": "Features top tasks related to the page it is on.",
 		"fr": "Comprend des tâches principales liées à la page sur laquelle elles se trouvent."
 	},
-	"modified": "2024-02-14",
+	"modified": "2025-05-08",
 	"componentName": "gc-most-requested",
 	"status": "stable",
-	"version": "1.0",
+	"version": "1.1.0",
 	"pages": {
 		"docs": [
 			{
@@ -1474,7 +1521,7 @@
 				"en": "https://design.canada.ca/common-design-patterns/most-requested.html",
 				"fr": "https://conception.canada.ca/configurations-conception-communes/en-demande.html"
 			},
-			"iteration": "_:iteration_mostrequested_1",
+			"iteration": "_:iteration_mostrequested_2",
 			"example": [
 				{
 					"en": { "href": "gc-most-requested-en.html", "text": "Most requested" },
@@ -1490,6 +1537,10 @@
 			],
 			"history": [
 				{
+					"en": "May 2025 - Items are now distributed vertically instead of horizontally.",
+					"fr": "Mai 2025 - Les items sont maintenant distribués verticalement plutôt que horizontalement."
+				},
+				{
 					"en": "February 2024 - Initial implementation of the variation.",
 					"fr": "Février 2024 - Implémentation initiale de la variante."
 				},
@@ -1503,7 +1554,7 @@
 	"implementation": [
 		{
 			"@id": "_:implement_mostrequested",
-			"iteration": "_:iteration_mostrequested_1",
+			"iteration": "_:iteration_mostrequested_2",
 			"name": {
 				"en": "Standard",
 				"fr": "Standard"
@@ -1550,11 +1601,30 @@
 	],
 	"iteration": [
 		{
+			"@id": "_:iteration_mostrequested_2",
+			"name": "Most requested - Iteration 2",
+			"date": "2024-11",
+			"detectableBy": ".gc-most-requested:not(.provisional)",
+			"predecessor": "_:iteration_mostrequested_1",
+			"additions": [
+				"Changed display of items from flex to column-count. This change is perceptible and a user will notice that change but it won't change the component essential behaviour. So this is a Minor change."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<section class=\"gc-most-requested\">\n\t<div class=\"container\">\n\t\t<h2>Most requested</h2>\n\t\t<ul>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 1]</a></li>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 2]</a></li>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 3]</a></li>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 4]</a></li>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 5]</a></li>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 6]</a></li>\n\t\t</ul>\n\t</div>\n</section>"
+				}
+			]
+		},
+		{
 			"@id": "_:iteration_mostrequested_1",
 			"name": "Most requested - Iteration 1",
 			"date": "2024-02",
 			"detectableBy": ".gc-most-requested:not(.provisional)",
 			"predecessor": "_:iteration_mostrequested_0",
+			"successor": "_:iteration_mostrequested_2",
 			"assets": [
 				{
 					"@type": "source-code",
@@ -1573,6 +1643,28 @@
 		}
 	],
 	"changesets": [
+		{
+			"@id": "_:cs_mostrequested",
+			"name": "Most requested - columns",
+			"status": "stable",
+			"baseOnIteration": "_:iteration_mostrequested_2",
+			"detectableBy": ".gc-most-requested",
+			"layout": "On smaller screens, the title is on the top and links are stacked. On medium and larger, the title is on the left and links are distributed over two columns from top to bottom and left to right.",
+			"style": "The component has a light gray background.",
+			"semantic": "h2 + (ul > li > a)",
+			"static": [
+				"Most requested",
+				"En demande"
+			],
+			"context": "The component must not be located inside an element with the class \"container\"",
+			"schema": [
+				"arrays of 'MostRequestedLink'",
+				"'MostRequestedLink' object: [ \"task links\", \"task names\" ]"
+			],
+			"test": [
+				"<a href=\"gc-most-requested-provisional-en.html\">Most-requested (provisional)</a>"
+			]
+		},
 		{
 			"@id": "_:cs_mostrequested",
 			"name": "Most requested",
