@@ -1,7 +1,7 @@
 ---
 title: GCWeb, the WET-BOEW Canada.ca theme
 altLangPage: index-fr.html
-dateModified: 2025-03-18
+dateModified: 2025-05-15
 description: "Home page describing all the components of the Canada.ca theme, named GCWeb."
 layout: no-container
 language: en
@@ -20,14 +20,14 @@ css:
       <p>The page templates and design patterns below comprise a reference implementation of the <a href="https://design.canada.ca">Canada.ca design system</a>, including the mandatory requirement of the Content and Information Architecture (C&amp;IA) Specification. Government of Canada departments and agencies can contribute additional patterns and templates via <a href="https://github.com/wet-boew/GCWeb">GCWeb github repository</a>.</p>
     </div>
     <div class="col-xs-12 col-md-auto pull-right">
-      <p><a href="https://github.com/wet-boew/GCWeb/archive/v16.5.0.zip" class="btn btn-primary">Download GCWeb theme <strong>v16.5.0</strong></a><br />
+      <p><a href="https://github.com/wet-boew/GCWeb/archive/v16.6.1.zip" class="btn btn-primary">Download GCWeb theme <strong>v16.6.1</strong></a><br />
         <small>(<time>{{ page.dateModified | date: '%F' }}</time> - <a href="https://github.com/wet-boew/gcweb/releases/latest">Release notes</a>)</small></p>
     </div>
   </div>
 </div>
 <div class="container-fluid wb-inview show-none" data-inview="nav-menu">
   <div class="row">
-    <nav class="well well-lg mrgn-tp-md">
+    <nav class="bg-light py-4 mb-3 mrgn-tp-md">
       <div class="container">
         <h2 class="mrgn-tp-0">Get started</h2>
         <ul class="list-unstyled colcount-md-3">
@@ -369,7 +369,7 @@ css:
 </div>
 <div class="container-fluid">
   <div class="row">
-    <div class="well well-lg mrgn-tp-md bg-gctheme text-white">
+    <div class="py-4 mb-3 mrgn-tp-md bg-gctheme text-white">
       <div class="container mrgn-bttm-lg">
         <h2 id="experiment" class="mrgn-tp-md mrgn-bttm-0">Special features</h2>
           <div class="row">
