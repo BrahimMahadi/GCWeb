@@ -1,7 +1,7 @@
 ---
 title: GCWeb, the WET-BOEW Canada.ca theme
 altLangPage: index-fr.html
-dateModified: 2025-05-15
+dateModified: 2025-06-03
 description: "Home page describing all the components of the Canada.ca theme, named GCWeb."
 layout: no-container
 language: en
@@ -12,6 +12,8 @@ css:
   integrity: sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf
 ---
 
+{%- include variable-core.liquid -%}
+
 {::nomarkdown}
 <div class="container">
   <h1 id="wb-cont" property="name">GCWeb, the WET-BOEW Canada.ca theme</h1>
@@ -20,7 +22,7 @@ css:
       <p>The page templates and design patterns below comprise a reference implementation of the <a href="https://design.canada.ca">Canada.ca design system</a>, including the mandatory requirement of the Content and Information Architecture (C&amp;IA) Specification. Government of Canada departments and agencies can contribute additional patterns and templates via <a href="https://github.com/wet-boew/GCWeb">GCWeb github repository</a>.</p>
     </div>
     <div class="col-xs-12 col-md-auto pull-right">
-      <p><a href="https://github.com/wet-boew/GCWeb/archive/v16.6.1.zip" class="btn btn-primary">Download GCWeb theme <strong>v16.6.1</strong></a><br />
+      <p><a href="https://github.com/wet-boew/GCWeb/archive/v16.7.0.zip" class="btn btn-primary">Download GCWeb theme <strong>v16.7.0</strong></a><br>
         <small>(<time>{{ page.dateModified | date: '%F' }}</time> - <a href="https://github.com/wet-boew/gcweb/releases/latest">Release notes</a>)</small></p>
     </div>
   </div>
@@ -197,7 +199,7 @@ css:
     </li>
   {% endfor %}
   </ul>
-  <hr />
+  <hr>
   <h2 id="templates" class="mrgn-bttm-lg pt-4">Templates</h2>
   <ul class="row list-unstyled wb-eqht-grd wb-filter mrgn-tp-md pb-4" data-wb-filter='{ "selector": ">li" }'>
   {% for template in site.data.templates %}
@@ -287,7 +289,7 @@ css:
     </li>
   {% endfor %}
   </ul>
-  <hr />
+  <hr>
   <h2 id="designPatterns" class="mrgn-bttm-lg pt-4">Design patterns</h2>
   <ul class="row list-unstyled wb-eqht-grd wb-filter mrgn-tp-md pb-4" data-wb-filter='{ "selector": ">li" }'>
   {% for designPattern in site.data.design-patterns %}
@@ -611,6 +613,8 @@ css:
               {{ mainExamples.path }}" lang="{{ mainExamples.language }}" hreflang="{{ mainExamples.language }}"><span class="fas fa-eye small mrgn-rght-sm" aria-hidden="true"></span>Working example</a>
           {% elsif mainExamples.url %}
             <a href="{{ mainExamples.url }}" lang="{{ mainExamples.language }}" hreflang="{{ mainExamples.language }}"><span class="fas fa-eye small mrgn-rght-sm" aria-hidden="true"></span>Working example</a>
+          {% elsif mainExamples.wetboew %}
+            <a href="{{ setting-demosBasePath }}wetboew-demos/{{ mainExamples.wetboew }}" lang="{{ mainExamples.language }}" hreflang="{{ mainExamples.language }}"><span class="fas fa-eye small mrgn-rght-sm" aria-hidden="true"></span>Working example</a>
           {% else %}
           <span class="fas fa-eye small mrgn-rght-sm" aria-hidden="true"></span>Working example
           {% endif %}
@@ -655,6 +659,8 @@ css:
                     {{ example.path }}" {% if example.language != page.language %}lang="{{ example.language }}" hreflang="{{ example.language }}"{% endif %}>{{ example.title }}</a></li>
                 {% elsif example.url %}
                   <li><a href="{{ example.url }}">{{ example.title }}</a></li>
+                {% elsif example.wetboew %}
+                  <li><a href="{{ setting-demosBasePath }}wetboew-demos/{{ example.wetboew }}">{{ example.title }}</a></li>
                 {% else %}
                   <li>{{ example.title }}</li>
                 {% endif %}
@@ -669,7 +675,7 @@ css:
     </li>
   {% endfor %}
   </ul>
-  <hr />
+  <hr>
   <h2 id="other">Other documentation</h2>
   <div class="row mrgn-tp-md">
     <div class="col-md-8">
