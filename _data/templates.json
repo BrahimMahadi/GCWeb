@@ -640,6 +640,16 @@
 				"title": "Page d'accueil institutionnelle",
 				"language": "fr",
 				"path": "institutional-landing-fr.html"
+			},
+			{
+				"title": "Institutional landing page - multiple with pictures",
+				"language": "en",
+				"path": "institutional-landing-multiple-en.html"
+			},
+			{
+				"title": "Page d'accueil institutionnelle - plusieurs avec des images",
+				"language": "fr",
+				"path": "institutional-landing-multiple-fr.html"
 			}
 		],
 		"reports": [
@@ -724,6 +734,37 @@
 					"fr": "Avril 2014 - Implémentation de la version 1 du gabarit de page."
 				}
 			]
+		},
+		{
+			"name": {
+				"en": "Institutional landing page - multiple with pictures",
+				"fr": "Pages d'accueil institutionnelle - plusieurs avec des images"
+			},
+			"status": "stable",
+			"description": {
+				"en": "Use this template as the landing page for Government of Canada institutions and organizations with multiple ministers or institutional heads.",
+				"fr": "Utilisez ce modèle comme page d'accueil pour les institutions et organismes du gouvernement du Canada lorsqu'il y a plusieurs ministres."
+			},
+			"guidance": {
+				"en": "https://design.canada.ca/mandatory-templates/institutional-profile-pages.html",
+				"fr": "https://conception.canada.ca/modeles-obligatoire/pages-profil-institutionnel.html"
+			},
+			"iteration": "_:iteration_ilp_4",
+			"example": [
+				{
+					"en": { "href": "institutional-landing-multiple-en.html", "text": "Institutional landing page - multiple" },
+					"fr": { "href": "institutional-landing-multiple-fr.html", "text": "Pages d'accueil institutionnelle - plusieurs" }
+				}
+			],
+			"implementation": [
+				"_:implement_ilp_multiple"
+			],
+			"history": [
+				{
+					"en": "July 2025 - implementation of the version 4 of the page template.",
+					"fr": "Juillet 2024 - Implémentation provisoire de la version 4 du gabarit de page."
+				}
+			]
 		}
 	],
 	"implementation": [
@@ -748,14 +789,6 @@
 					"Ajoutez la classe CSS <code>.page-type-ilp</code> sur l'élément <code>&lt;body></code> de la page.",
 					"Reportez-vous à l'exemple pratique pour un exemple de code.",
 					"Référez-vous à l'exemple pratique et aux directives pour plus d'informations sur l'implémentation ce modèle de page."
-				]
-			},
-			"notes": {
-				"en": [
-					"Not adding the required CSS class (<code>.page-type-ilp</code>) will result in the styles specific to this template not being applied. We did implement a temporary workaround as a transition to this new template. The workaround is going to be removed at the same time as the demoted/deprecated ILP version 1."
-				],
-				"fr": [
-					"Si vous n'ajoutez pas la classe CSS requise (<code>.page-type-ilp</code>), les styles spécifiques à ce gabarit ne seront pas appliqués. Nous avons mis en œuvre une solution de contournement temporaire en guise de transition vers ce nouveau modèle. La solution de contournement sera supprimée en même temps que la version 1 de la PAI rétrogradée/obsolète."
 				]
 			}
 		},
@@ -802,9 +835,51 @@
 				"en": "institutional-landing-en.html main > *:not(.pagedetails)",
 				"fr": "institutional-landing-fr.html main > *:not(.pagedetails)"
 			}
+		},
+		{
+			"@id": "_:implement_ilp_multiple",
+			"iteration": "_:iteration_ilp_4",
+			"name": {
+				"en": "Multiple",
+				"fr": "Plusieurs"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the multiple pictures component manually.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant de plusieurs images manuellement."
+			},
+			"instructions": {
+				"en": [
+					"Refer to the working example for a code sample.",
+					"Refer to the working example and guidance for more information on how to implement this page template."
+				],
+				"fr": [
+					"Reportez-vous à l'exemple pratique pour un exemple de code.",
+					"Référez-vous à l'exemple pratique et aux directives pour plus d'informations sur l'implémentation ce modèle de page."
+				]
+			}
 		}
 	],
 	"iteration": [
+		{
+			"@id": "_:iteration_ilp_4",
+			"name": "Institutional landing page - Iteration 4 (multiple)",
+			"date": "2025-07",
+			"detectableBy": "Multiple pictures for minister or insitutional head.",
+			"example": {
+				"en": [
+					{
+						"href": "institutional-landing-multiple-en.html",
+						"text": "Institutional landing page version 4 (multiple)"
+					}
+				],
+				"fr": [
+					{
+						"href": "institutional-landing-multiple-fr.html",
+						"text": "Page d'accueil institutionnelle version 4 (plusieurs)"
+					}
+				]
+			}
+		},
 		{
 			"@id": "_:iteration_ilp_3",
 			"name": "Institutional landing page - Iteration 3",
@@ -813,46 +888,6 @@
 				"Stabilization of the page template."
 			],
 			"detectableBy": ".page-type-ilp"
-		},
-		{
-			"@id": "_:iteration_ilp_2",
-			"name": "Institutional landing page - Iteration 2",
-			"date": "2021-06",
-			"detectableBy": "Social media channels have the horizontal layout. About the institution and social media channels are on a white background.",
-			"example": {
-				"en": [
-					{
-						"href": "deprecated/institution-landing-en.html",
-						"text": "Institutional landing page version 2 (beta)"
-					}
-				],
-				"fr": [
-					{
-						"href": "deprecated/institution-landing-fr.html",
-						"text": "Page d'accueil institutionnelle version 2 (bêta)"
-					}
-				]
-			}
-		},
-		{
-			"@id": "_:iteration_ilp_1",
-			"name": "Institutional landing page - Iteration 1",
-			"date": "2014-04",
-			"detectableBy": "Social media channels at top right. Latest news directly under intro block.",
-			"example": {
-				"en": [
-					{
-						"href": "deprecated/institution-en.html",
-						"text": "Institutional landing page version 1"
-					}
-				],
-				"fr": [
-					{
-						"href": "deprecated/institution-fr.html",
-						"text": "Page d'accueil institutionnelle version 1"
-					}
-				]
-			}
 		}
 	],
 	"changesets": [
@@ -1769,8 +1804,8 @@
 					"fr": { "href": "topic-fr.html", "text": "Page de sujet" }
 				},
 				{
-					"en": { "href": "demoted/topic_v2-en.html", "text": "Demoted as of GCWeb v16.2.0 - Topic page version 2" },
-					"fr": { "href": "demoted/topic_v2-fr.html", "text": "Rétrogradée à partir de GCWeb v16.2.0 - Page de sujet version 2" }
+					"en": { "href": "deprecated/topic_v2-en.html", "text": "Deprecated as of GCWeb v17.0.0 - Topic page version 2" },
+					"fr": { "href": "deprecated/topic_v2-fr.html", "text": "Obsolète à partir de GCWeb v17.0.0 - Page de sujet version 2" }
 				}
 			],
 			"implementation": [
@@ -1816,8 +1851,8 @@
 					"fr": { "href": "topic-stackedheader-fr.html", "text": "Page de sujet avec en-tête superposé" }
 				},
 				{
-					"en": { "href": "demoted/topic-stackedheader_v2-en.html", "text": "Demoted as of GCWeb v16.2.0 - Topic page with stacked header version 2" },
-					"fr": { "href": "demoted/topic-stackedheader_v2-fr.html", "text": "Rétrogradée à partir de GCWeb v16.2.0 - Page de sujet avec en-tête superposé version 2" }
+					"en": { "href": "deprecated/topic-stackedheader_v2-en.html", "text": "Deprecated as of GCWeb v17.0.0 - Topic page with stacked header version 2" },
+					"fr": { "href": "deprecated/topic-stackedheader_v2-fr.html", "text": "Obsolète à partir de GCWeb v17.0.0 - Page de sujet avec en-tête superposé version 2" }
 				}
 			],
 			"implementation": [
@@ -2060,7 +2095,7 @@
 		{
 			"@id": "_:cs_topic_2",
 			"name": "Topic page - Version 2",
-			"status": "demoted",
+			"status": "deprecated",
 			"baseOnIteration": "_:iteration_topic_2",
 			"detectableBy": "By the sequence of the mandatory implemented design pattern and components and limited to its optional components.",
 			"layout": [

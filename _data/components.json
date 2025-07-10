@@ -189,7 +189,7 @@
 	},
 	"modified": "2024-12-10",
 	"componentName": "byline",
-	"status": "demoted",
+	"status": "deprecated",
 	"version": "1.1.0",
 	"pages": {
 		"docs": [
@@ -212,7 +212,7 @@
 				"en": "Institutional byline - default",
 				"fr": "Institution responsable - par défaut"
 			},
-			"status": "demoted",
+			"status": "deprecated",
 			"description": {
 				"en": "The institutional byline provides people with a link to the institution or institutions responsible for the content.",
 				"fr": "La signature institutionnelle fournit aux personnes un lien vers l’institution ou les institutions responsables du contenu."
@@ -228,6 +228,10 @@
 				"_:implement_byline"
 			],
 			"history": [
+				{
+					"en": "June 2025 - Deprecation of the component - Moved to the Main title component. Use the Contributors component instead.",
+					"fr": "Juin 2025 - Composante maintenant obsolète - Déplacée vers la composante Titre principal. Utilisez plutôt la composante Contributeurs."
+				},
 				{
 					"en": "December 2024 - Demotion of the component - Moved to the Main title component. Use the Contributors component instead.",
 					"fr": "Décembre 2024 - Composante maintenant rétrogradée - Déplacée vers la composante Titre principal. Utilisez plutôt la composante Contributeurs."
@@ -340,7 +344,7 @@
 		{
 			"@id": "_:cs_byline_2",
 			"name": "Institutional byline - version 2",
-			"status": "demoted",
+			"status": "deprecated",
 			"baseOnIteration": "_:iteration_byline_2",
 			"detectableBy": ".gc-byline",
 			"guidance": "The component must be located directly after the first <h1> of the page.",
@@ -358,7 +362,7 @@
 		{
 			"@id": "_:cs_byline",
 			"name": "Institutional byline",
-			"status": "demoted",
+			"status": "deprecated",
 			"baseOnIteration": "_:iteration_byline",
 			"detectableBy": "h1#wb-cont+p>strong>a",
 			"guidance": "The component must be located directly after the first <h1> of the page.",
@@ -1188,7 +1192,7 @@
 }
 ,{
 	"@context": {
-		"@version": 1.1,
+		"@version": 1.2,
 		"dct": "http://purl.org/dc/terms/",
 		"title": { "@id": "dct:title", "@container": "@language" },
 		"description": { "@id": "dct:description", "@container": "@language" },
@@ -1202,10 +1206,10 @@
 		"en": "This component is for the minister or institutional head pattern on the institutional landing page.",
 		"fr": "Ce composant est destiné au modèle du ministre ou du chef d'institution sur la page d'accueil de l'institution."
 	},
-	"modified": "2025-04-07",
+	"modified": "2025-06-16",
 	"componentName": "gc-minister",
 	"status": "stable",
-	"version": "1.1",
+	"version": "1.2",
 	"pages": {
 		"examples": [
 			{
@@ -1237,6 +1241,16 @@
 				"title": "Ministre ou chef d'institution - cas particuliers",
 				"language": "fr",
 				"path": "gc-minister-special-cases-fr.html"
+			},
+			{
+				"title": "Minister or institutional head (multiple)",
+				"language": "en",
+				"path": "gc-minister-multiple-en.html"
+			},
+			{
+				"title": "Ministre ou chef d'institution (plusieurs)",
+				"language": "fr",
+				"path": "gc-minister-multiple-fr.html"
 			}
 		],
 		"docs": [
@@ -1288,13 +1302,39 @@
 				"_:implement_minister_v1_to_v1.1"
 			],
 			"history": [
-				{
-					"en": "April 2025 - Fixed issue where links were not clickable in mobile view.",
+				{	"en": "April 2025 - Fixed issue where links were not clickable in mobile view.",
 					"fr": "Avril 2025 - Problème résolu où les liens n'étaient pas cliquables dans la vue mobile."
 				},
 				{
 					"en": "March 2024 - Initial implementation of the variation.",
 					"fr": "Mars 2024 - Implémentation initiale de la variante."
+				}
+			]
+		},
+		{
+			"name": {
+				"en": "Minister or institutional head - multiple",
+				"fr": "Ministre ou chef d’institution - plusieurs"
+			},
+			"status": "stable",
+			"description": {
+				"en": "This component is for the minister or institutional head pattern with multiple pictures on the institutional landing page.",
+				"fr": "Ce composant est destiné au modèle du ministre ou du chef d'institution avec plusieurs images sur la page d'accueil de l'institution."
+			},
+			"iteration": "_:iteration_minister_3",
+			"example": [
+				{
+					"en": { "href": "gc-minister-multiple-en.html", "text": "Minister or institutional head (multiple with pictures)" },
+					"fr": { "href": "gc-minister-multiple-fr.html", "text": "Ministre ou chef d'institution (plusieurs avec images)" }
+				}
+			],
+			"implementation": [
+				"_:implement_minister_v1.2"
+			],
+			"history": [
+				{
+					"en": "June 2025 - Added variation of the component with multiple pictures to accomodate high number of appointees.",
+					"fr": "Juin 2025 - Ajout d'une variante du composant avec plusieurs images pour tenir compte du nombre élevé de personnes nommées."
 				}
 			]
 		}
@@ -1377,6 +1417,52 @@
 					"Ajoutez la classe col-xs-12 aux éléments col-md-5 et col-md-7 (contenant respectivement l'image et la description) afin de résoudre le problème où les liens ne sont pas cliquables dans la vue mobile"
 				]
 			}
+		},
+		{
+			"@id": "_:implement_minister_v1.2",
+			"iteration": "_:iteration_minister_3",
+			"name": {
+				"en": "Multiple",
+				"fr": "Plusieurs"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the multiple pictures component manually.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant de plusieurs images manuellement."
+			},
+			"notes": {
+				"en": [
+					"The recommended image size is 200px by 250px."
+				],
+				"fr": [
+					"La taille d'image recommandée est de 200px par 250px."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "Code sample with image:",
+					"code": "<section class=\"gc-minister\">\n\t<h2>Secretary(ies) of State</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t <img src=\"[image url]\" alt=\"The Honourable [Minister name]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Code sample without image:",
+						"code": "<section class=\"gc-minister\">\n\t<h2>Secretary(ies) of State</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Exemple de code avec image :",
+						"code": "<section class=\"gc-minister\">\n\t<h2>Secrétaire(s) d'État</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">L'honorable [prénom et nom de famille]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t<img src=\"[url de l'image]\" alt=\"L'honorable [prénom et nom de famille]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Titre officiel du ministre]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Lettre de mandat</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Dossier d'information</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Exemple de code sans image :",
+						"code": "<section class=\"gc-minister\">\n\t<h2>Secrétaire(s) d'État</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<h3><a href=\"#\">L'honorable [prénom et nom de famille]</a></h3>\n\t\t\t<p>[Titre officiel]</p>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"\">Lettre de mandat</a></li>\n\t\t\t\t<li><a href=\"\">Dossier d'information</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</section>"
+					}
+				]
+			}
 		}
 	],
 	"iteration": [
@@ -1420,6 +1506,29 @@
 					"code": "<section class=\"gc-minister col-xs-12 col-md-5\">\n\t<h2>Minister</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-6\">\n\t\t\t<h3><a href=\"#\">The Honourable [Minister 3 name]</a></h3>\n\t\t\t<p>[Official title]</p>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</section>"
 				}
 			]
+		},
+		{
+			"@id": "_:iteration_minister_3",
+			"name": "Minister - Iteration 3",
+			"date": "2025-06",
+			"additions": [
+				"Added variation of the component with multiple pictures to accomodate high number of appointees. "
+			],
+			"detectableBy": ".gc-minister",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample with image",
+					"code": "<section class=\"gc-minister\">\n\t<h2>Secretary(ies) of State</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t <img src=\"[image url]\" alt=\"The Honourable [Minister name]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+
+				},
+				{
+					"@type": "source-code",
+					"description": "Code sample without image",
+					"code": "<section class=\"gc-minister\">\n\t<h2>Secretary(ies) of State</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
+				}
+			]
 		}
 	],
 	"changesets": [
@@ -1446,6 +1555,29 @@
 				"Ministers > Briefing book URL (type: STRING)"
 			],
 			"mediaConsiderations": "Recommended image size: 200x250px."
+		},
+		{
+			"@id": "_:cs_minister",
+			"name": "Minister or institutional head",
+			"status": "stable",
+			"baseOnIteration": "_:iteration_minister_3",
+			"detectableBy": ".gc-minister",
+			"layout": "Each minister takes up one third of the container and there are two rows. ",
+			"semantic": "section ((h3 a) + img + p + (ul > li))",
+			"style": "The image has a thin grey border.",
+			"context": "To be used in the institutional landing page template.",
+			"schema": [
+				"Section title (type: STRING) - for example: Minister, President, Parliamentary secretary, Associate minister, Ombudsman, Management",
+				"Ministers (type: ARRAY)",
+				"Ministers > Name (type: STRING)",
+				"Ministers > Title (type: STRING)",
+				"Ministers > Page URL (type: STRING)",
+				"Ministers > Image URL (type: STRING)",
+				"Ministers > Mandate letter text (type: STRING)",
+				"Ministers > Mandate letter URL (type: STRING)",
+				"Ministers > Briefing book text (type: STRING)",
+				"Ministers > Briefing book URL (type: STRING)"
+			]
 		}
 	]
 }
@@ -2193,6 +2325,182 @@
 			}
 		]
 	}
+}
+,{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "GCDS card",
+		"fr": "Carte GCDS"
+	},
+	"description": {
+		"en": "Co-existence pilot of the GCDSs card in GCWeb.",
+		"fr": "Pilote de co-existance des cartes GCDS dans GCWeb."
+	},
+	"modified": "2025-07-04",
+	"componentName": "gcds-card",
+	"status": "provisional",
+	"version": "1.0",
+	"pages": {
+		"examples": [
+			{
+				"title": "GCDS card",
+				"language": "en",
+				"path": "card-en.html"
+			},
+			{
+				"title": "Carte GCDS",
+				"language": "fr",
+				"path": "card-fr.html"
+			}
+		],
+		"docs": [
+			{
+				"title": "GCDS card",
+				"language": "en",
+				"path": "card-doc-en.html"
+			},
+			{
+				"title": "Carte GCDS",
+				"language": "fr",
+				"path": "card-doc-fr.html"
+			}
+		],
+		"test": [
+			{
+				"title": "GCDS Card with images",
+				"language": "en",
+				"path": "withimg-en.html"
+			},
+			{
+				"title": "Carte GCDS avec images",
+				"language": "fr",
+				"path": "withimg-fr.html"
+			},
+			{
+				"title": "GCDS Card as implemented in MWS",
+				"language": "en",
+				"path": "mws-en.html"
+			},
+			{
+				"title": "Carte GCDS tel que l'implémentation dans le système web géré",
+				"language": "fr",
+				"path": "mws-fr.html"
+			},
+			{
+				"title": "GCDS Card like as implemented in MWS (without workaround)",
+				"language": "en",
+				"path": "mws-no-workaround-en.html"
+			},
+			{
+				"title": "Carte GCDS similaire à l'implémentation dans le système web géré (sans contournement)",
+				"language": "fr",
+				"path": "mws-no-workaround-fr.html"
+			}
+		]
+	},
+	"a11yGuidance": "no accessibility guidance",
+	"variations": [
+		{
+			"name": {
+				"en": "GCDS Card - default",
+				"fr": "Carte GCDS - par défaut"
+			},
+			"status": "provisional",
+			"description": {
+				"en": "Co-existence pilot of the GCDS card in GCWeb.",
+				"fr": "Pilote de co-existance de la carte GCDS dans GCWeb."
+			},
+			"iteration": "_:implement_card",
+			"example": [
+				{
+					"en": { "href": "card-en.html", "text": "GCDS Card" },
+					"fr": { "href": "card-fr.html", "text": "Carte GCDS" }
+				}
+			],
+			"implementation": [
+				"_:implement_card"
+			],
+			"history": [
+				{
+					"en": "July 2025 - Initial implementation of the component co-existing with GCWeb.",
+					"fr": "Juillet 2025 - Implémentation initiale de la composante co-existant avec GCWeb."
+				}
+			]
+		}
+	],
+	"implementation": [
+		{
+			"@id": "_:implement_card",
+			"iteration": "_:iteration_card_1",
+			"name": {
+				"en": "Standard",
+				"fr": "Standard"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the component manually and want to participate to the Principal Publisher pilot.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant manuellement et qui veulent participer au pilote avec l'Éditeur Principal."
+			},
+			"instructions": {
+				"en": [
+					"Add the GCDS loader into your page, distributed here <code>&lt;script blocking=\"render\" src=\"dist/GCWeb/js/gcdsloader.min.js\">&lt;/script></code>",
+					"Add your <code>gcds-card</code> inside a <code>gcds-grid</code> and then you can configure according to GCDS documentation"
+				],
+				"fr": [
+					"Ajoutez le chargeur de GCDS dans votre page, ce dernier est distribué ici <code>&lt;script blocking=\"render\" src=\"dist/GCWeb/js/gcdsloader.min.js\">&lt;/script></code>",
+					"Ajoutez vos <code>gcds-card</code> à l'intérieur d'une <code>gcds-grid</code> et après vous pouvez faire votre configuration tel que la documenation de GCDS."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "Code sample:",
+						"code": "<gcds-grid columns=\"1fr\" columns-tablet=\"1fr 1fr\" columns-desktop=\"1fr 1fr 1fr\">\n\n\t<gcds-card card-title=\"Lorem ipsum\" href=\"#\">\n\t\t<gcds-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Aenean id\" href=\"#\">\n\t\t<gcds-text>Aenean id sem tellus. Sed sodales mauris non sagittis auctor. Etiam tempus a metus in porta.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Pellentesque dapibus\" href=\"#\" badge=\"badge\">\n\t\t<gcds-text>Pellentesque dapibus erat sit amet lectus scelerisque, sed gravida metus pellentesque.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Proin at ligula\" href=\"#\">\n\t\t<gcds-text>Proin at ligula tincidunt neque convallis varius.</gcds-text>\n\t</gcds-card>\n\n</gcds-grid>"
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Exemple de code&nbsp;:",
+						"code": "<gcds-grid columns=\"1fr\" columns-tablet=\"1fr 1fr\" columns-desktop=\"1fr 1fr 1fr\">\n\n\t<gcds-card card-title=\"Lorem ipsum\" href=\"#\">\n\t\t<gcds-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Aenean id\" href=\"#\">\n\t\t<gcds-text>Aenean id sem tellus. Sed sodales mauris non sagittis auctor. Etiam tempus a metus in porta.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Pellentesque dapibus\" href=\"#\" badge=\"badge\">\n\t\t<gcds-text>Pellentesque dapibus erat sit amet lectus scelerisque, sed gravida metus pellentesque.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Proin at ligula\" href=\"#\">\n\t\t<gcds-text>Proin at ligula tincidunt neque convallis varius.</gcds-text>\n\t</gcds-card>\n\n</gcds-grid>"
+					}
+				]
+			}
+		}
+	],
+	"iteration": [
+		{
+			"@id": "_:iteration_card_1",
+			"name": "GCDS card - Iteration 1",
+			"date": "2025-07",
+			"detectableBy": ".wb-enable gcds-card",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<gcds-grid columns=\"1fr\" columns-tablet=\"1fr 1fr\" columns-desktop=\"1fr 1fr 1fr\">\n\n\t<gcds-card card-title=\"Lorem ipsum\" href=\"#\">\n\t\t<gcds-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Aenean id\" href=\"#\">\n\t\t<gcds-text>Aenean id sem tellus. Sed sodales mauris non sagittis auctor. Etiam tempus a metus in porta.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Pellentesque dapibus\" href=\"#\" badge=\"badge\">\n\t\t<gcds-text>Pellentesque dapibus erat sit amet lectus scelerisque, sed gravida metus pellentesque.</gcds-text>\n\t</gcds-card>\n\n\t<gcds-card card-title=\"Proin at ligula\" href=\"#\">\n\t\t<gcds-text>Proin at ligula tincidunt neque convallis varius.</gcds-text>\n\t</gcds-card>\n\n</gcds-grid>"
+				}
+			]
+		}
+	],
+	"changesets": [
+		{
+			"@id": "_:cs_card_1",
+			"name": "GCDS card",
+			"status": "provisional",
+			"detectableBy": ".wb-enable gcds-card",
+			"layout": "Not applicable",
+			"semantic": "Not applicable",
+			"notes": "Tested when used with the gcds-grid."
+		}
+	]
 }
 ,{
 	"@context": {
