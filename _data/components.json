@@ -7,12 +7,47 @@
 		"modified": "dct:modified"
 	},
 	"title": {
+		"en": "Badges",
+		"fr": "Badges"
+	},
+	"description": {
+		"en": "Use badges (numerical indicators) to highlight the number of updates, new or unread items associated with a link.",
+		"fr": "Utilisez les badges (indicateurs numériques) afin de souligner le nombre de mises à jour, d'éléments nouveaux ou non lus associés à un lien."
+	},
+	"modified": "2025-09-17",
+	"componentName": "badges",
+	"processing": "baseline",
+	"status": "stable",
+	"pages": {
+		"examples": [
+			{
+				"title": "Badges",
+				"language": "en",
+				"path": "badges-en.html"
+			},
+			{
+				"title": "Badges",
+				"language": "fr",
+				"path": "badges-fr.html"
+			}
+		]
+	}
+}
+,{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
 		"en": "Bold content",
 		"fr": "Contenu en gras"
 	},
 	"description": {
-		"en": "This component applies font weight bold to every text element inside it and generates normal font weight when the element <code>&lt;strong&gt;</code> is applied.",
-		"fr": "Ce composant applique une épaisseur de police en gras à chaque élément de texte qu'il contient et génère une épaisseur de police normale lorsque l'élément <code>&lt;strong&gt;</code> est appliqué."
+		"en": "This component applies font weight bold to every text element inside it and generates normal font weight when the &lt;strong&gt; element is applied.",
+		"fr": "Ce composant applique une épaisseur de police en gras à chaque élément de texte qu'il contient et génère une épaisseur de police normale lorsque l'élément &lt;strong&gt; est appliqué."
 	},
 	"modified": "2024-02-05",
 	"componentName": "bold-content",
@@ -381,6 +416,219 @@
 }
 ,{
 	"@context": {
+		"@version": 1.0,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "Conjunctions (and/or)",
+		"fr": "Conjonction (et/ou)"
+	},
+	"description": {
+		"en": "Conjunctions for stacked or side by side decision points, and/or",
+		"fr": "Conjonctions pour des points de décision empilés ou côte à côte, et/ou"
+	},
+	"modified": "2025-07-14",
+	"componentName": "conjunctions",
+	"status": "stable",
+	"version": "1.0",
+	"pages": {
+		"examples": [
+			{
+				"title": "Conjunctions (and/or) - working example",
+				"language": "en",
+				"path": "conjunction.html"
+			},
+			{
+				"title": "Conjonction (et/ou) - example pratique",
+				"language": "fr",
+				"path": "conjunction-fr.html"
+			}
+		],
+		"docs": [
+			{
+				"title": "Conjunctions (and/or) documentation",
+				"language": "en",
+				"path": "conjunction-docs-en.html"
+			},
+			{
+				"title": "Conjonction (et/ou) - documentation",
+				"language": "fr",
+				"path": "conjunction-docs-fr.html"
+			},
+			{
+				"title": "Conjonction (et/ou) - guidance",
+				"language": "fr",
+				"path": "conjunction-guidance-fr.html"
+			},
+			{
+				"title": "Conjonction (et/ou) - guidance",
+				"language": "fr",
+				"path": "conjunction-guidance-fr.html"
+			}
+		],
+		"reports": [
+			{
+				"title": "Accessibility assessment #1",
+				"language": "en",
+				"path": "reports/a11y-1-en.html"
+			},
+			{
+				"title": "Évaluation de l'accessibilité #1",
+				"language": "fr",
+				"path": "reports/a11y-1-fr.html"
+			}
+		]
+	},
+	"a11yGuidance": "No accessibility guidance.",
+	"variations": [
+		{
+			"name": {
+				"en": "Conjunctions (and/or)",
+				"fr": "Conjonction (et/ou)"
+			},
+			"status": "stable",
+			"description": {
+				"en": "Conjunctions for stacked or side by side decision points, and/or",
+				"fr": "Conjonctions pour des points de décision empilés ou côte à côte, et/ou"
+			},
+			"iteration": "_:iteration_conjunction_1",
+			"example": [
+				{
+					"en": { "href": "conjunction.html", "text": "Conjunctions (and/or)" },
+					"fr": { "href": "conjunction-fr.html", "text": "Conjonction (et/ou)" }
+				}
+			],
+			"implementation": [
+				"_:implement_conjunction"
+			],
+			"history": [
+				{
+					"en": "June 2024 - Changed border to appear in high contrast. Changed font size of CSS generated text to em value for better scalability between parent font sizes. Increased minimum height of side by side pattern to create consistant border above and below CSS text design. Updated governance towards stabilization.",
+					"fr": "Juin 2024 - Modification de la bordure pour un contraste élevé. Modification de la taille de police du texte généré par CSS : la valeur em permet une meilleure évolutivité entre les tailles de police parentes. Augmentation de la hauteur minimale du motif côte à côte pour créer une bordure cohérente au-dessus et en dessous du texte CSS. Mise à jour de la gouvernance pour une meilleure stabilisation."
+				},
+				{
+					"en": "August 2024 - Change was to remove the side-by-side line separator in Firefox (but keep the shape and text) when in High contrast mode. The previous pattern had the line separator \"cut\" through the words (and/or) which could make it slightly illegible.",
+					"fr": "Août 2024 - La modification a consisté à supprimer le séparateur de lignes côte à côte dans Firefox (tout en conservant la forme et le texte) en mode Contraste élevé. Auparavant, le séparateur de lignes « coupait » les mots (et/ou), ce qui pouvait le rendre légèrement illisible."
+				},
+				{
+					"en": "September 2025 - Conjunction component was stabilized.",
+					"fr": "Septembre 2025 - La composante de conjonction a été stabilisée."
+				}
+			]
+		}
+	],
+	"implementation": [
+		{
+			"@id": "_:implement_conjunction",
+			"iteration": "_:iteration_conjunction_1",
+			"name": {
+				"en": "Standard",
+				"fr": "Standard"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the component manually.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant manuellement."
+			},
+			"instructions": {
+				"en": [
+					"Guidance for the conjunction can be found on the following page: <a href=\"conjunction-guidance-en.html\">Conjunction (and/or) - guidance</a>.",
+					"Refer to the following code samples."
+				],
+				"fr": [
+					"Des conseils pour la conjonction peuvent être trouvés sur la page suivante : <a href=\"conjunction-guidance-fr.html\">Conjonction (et/ou) - guidance</a>.",
+					"Référez-vous au code qui suit."
+				]
+			},
+				"notes": {
+				"en": [
+					"UX research done for the conjunction component can be found on the following page: <a href=\"./reports/ux-research.html\">Conjunctions (and/or) - UX research</a>."
+				],
+				"fr": [
+					"Les recherches UX effectuées pour le composant de conjonction peuvent être trouvées sur la page suivante : <a href=\"./reports/ux-research-fr.html\">Conjonctions (et/ou) - recherche UX</a>."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "List element example (or):",
+						"code": "<p>Lead in statement</p>\n<ul class=\"cnjnctn-type-or\">\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n</ul>"
+					},
+					{
+						"@type": "source-code",
+						"description": "List element example (and):",
+						"code": "<p>Lead in statement</p>\n<ul class=\"cnjnctn-type-and\">\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n</ul>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Block element example (or):",
+						"code": "<div class=\"cnjnctn-type-or\">\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n</div>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Block element example (and):",
+						"code": "<div class=\"cnjnctn-type-and\">\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n</div>"
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Exemple de élément de liste (or) :",
+						"code": "<p>Lead in statement</p>\n<ul class=\"cnjnctn-type-or\">\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n\t<li class=\"cnjnctn-col\">\n\t..\n\t</li>\n</ul>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Exemple de élément de liste (and) :",
+						"code": "<p>Lead in statement</p>\n<ul class=\"cnjnctn-type-and\">\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n\t<li class=\"cnjnctn-col\">\n\t...\n\t</li>\n</ul>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Exemple de élément de bloc (or):",
+						"code": "<div class=\"cnjnctn-type-or\">\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n</div>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Exemple de élément de bloc (and):",
+						"code": "<div class=\"cnjnctn-type-and\">\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n\t<div class=\"cnjnctn-col\">\n\t...\n\t</div>\n</div>"
+					}
+				]
+			}
+		}
+	],
+	"iteration": [
+		{
+			"@id": "_:iteration_conjunction_1",
+			"name": "Conjunctions (and/or) - Iteration 1",
+			"date": "2024-08",
+			"detectableBy": ".cnjnctn-col",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<p>Lead in statement</p><ul class=\"cnjnctn-type-or\"><li class=\"cnjnctn-col\">...</li><li class=\"cnjnctn-col\">...</li></ul>"
+				}
+			]
+		}
+	],
+	"changesets": [
+		{
+			"@id": "_:cs_conjunction_1",
+			"name": "Conjunctions (and/or)",
+			"status": "stable",
+			"baseOnIteration": "_:iteration_conjunction_1",
+			"detectableBy": ".cnjnctn-col",
+			"layout": "Not applicable",
+			"style": "Design to clearly demonstrate that there are options or that there are content blocks that are complementary or associated",
+			"semantic": "Not applicable"
+		}
+	]
+}
+,{
+	"@context": {
 		"@version": 1.1,
 		"dct": "http://purl.org/dc/terms/",
 		"title": { "@id": "dct:title", "@container": "@language" },
@@ -453,23 +701,173 @@
 		"en": "Download link with custom styles.",
 		"fr": "Lien de téléchargement avec des styles personnalisés."
 	},
-	"modified": "2023-04-20",
+	"modified": "2025-08-20",
 	"componentName": "gc-dwnld",
 	"status": "stable",
+	"version": "2.0",
 	"pages": {
-		"examples": [
+		"docs": [
 			{
 				"title": "Download link",
 				"language": "en",
-				"path": "download_link-en.html"
+				"path": "gc-dwnld-doc-en.html"
 			},
 			{
 				"title": "Lien de téléchargement",
 				"language": "fr",
-				"path": "download_link-fr.html"
+				"path": "gc-dwnld-doc-fr.html"
+			}
+		],
+		"examples": [
+			{
+				"title": "Download link - Working examples",
+				"language": "en",
+				"path": "gc-dwnld-en.html"
+			},
+			{
+				"title": "Lien de téléchargement - Exemples pratiques",
+				"language": "fr",
+				"path": "gc-dwnld-fr.html"
 			}
 		]
-	}
+	},
+	"a11yGuidance": "no accessibility guidance",
+	"variations": [
+		{
+			"name": {
+				"en": "Download link",
+				"fr": "Lien de téléchargement"
+			},
+			"status": "stable",
+			"description": {
+				"en": "Download links are used for referencing and linking to non-HTML files on Canada.ca web pages.",
+				"fr": "Les liens de téléchargement servent à renvoyer ou à lier à des fichiers de format autre que HTML sur les pages Web de Canada.ca."
+			},
+			"guidance": {
+				"en": "https://design.canada.ca/common-design-patterns/download-links.html",
+				"fr": "https://conception.canada.ca/configurations-conception-communes/liens-telechargement.html"
+			},
+			"iteration": "_:iteration_gc_dwnld_2",
+			"example": [
+				{
+					"en": { "href": "gc-dwnld-en.html", "text": "Download link" },
+					"fr": { "href": "gc-dwnld-fr.html", "text": "Lien de téléchargement" }
+				}
+			],
+			"implementation": [
+				"_:implement_gc_dwnld"
+			],
+			"history": [
+				{
+					"en": "August 2025 - New pattern for the variant.",
+					"fr": "Août 2025 - Nouveau modèle pour la variante."
+				},
+				{
+					"en": "June 2014 - Initial implementation of the variation.",
+					"fr": "Juin 2014 - Implémentation initiale de la variante."
+				}
+			]
+		}
+	],
+	"implementation": [
+		{
+			"@id": "_:implement_gc_dwnld",
+			"iteration": "_:iteration_gc_dwnld_2",
+			"name": {
+				"en": "Standard",
+				"fr": "Standard"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the component manually.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant manuellement."
+			},
+			"instructions": {
+				"en": [
+					"Follow the markup below to create a download link.",
+					"To display the image above the text, add the class <code>vertical</code> to your <code>&lt;a class=\"gc-dwnld\"></code> element.",
+					"To make the component span the full width of its container, add the class <code>full-width</code> to your <code>&lt;a class=\"gc-dwnld\"></code> element."
+				],
+				"fr": [
+					"Suivez le balisage ci-dessous pour créer un lien de téléchargement.",
+					"Pour afficher l'image au-dessus du texte, ajoutez la classe <code>vertical</code> à votre élément <code>&lt;a class=\"gc-dwnld\"></code>.",
+					"Pour que le composant s'étende sur toute la largeur de son conteneur, ajoutez la classe <code>full-width</code> à votre élément <code>&lt;a class=\"gc-dwnld\"></code>."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "Code sample:",
+						"code": "<a href=\"#\" class=\"gc-dwnld\" download>\n\t<img src=\"[image url]\" alt=\"\">\n\t<span>[Document Title]<br>(<abbr title=\"Portable Document Format\">PDF</abbr>, 273 <abbr title=\"KiloByte\">KB</abbr>)</span>\n</a>"
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Exemple de code&nbsp;:",
+						"code": "<a href=\"#\" class=\"gc-dwnld\" download>\n\t<img src=\"[url de l'image]\" alt=\"\">\n\t<span>[Titre du document]<br>(<abbr title=\"Portable Document Format\">PDF</abbr>, 273 <abbr title=\"KiloOctet\">KB</abbr>)</span>\n</a>"
+					}
+				]
+			},
+			"notes": {
+				"en": [
+					"The image is optional.",
+					"Ensure that the <code>alt</code> attribute of the image is empty (<code>alt=\"\"</code>) to avoid screen readers announcing it.",
+					"Make sure to include the file type (e.g., PDF, DOCX) and size (e.g., 273 KB) in the link text for accessibility and user awareness."
+				],
+				"fr": [
+					"L'image est facultative.",
+					"Assurez-vous que l'attribut <code>alt</code> de l'image est vide (<code>alt=\"\"</code>) afin d'éviter que les lecteurs d'écran ne l'annoncent.",
+					"Veillez à inclure le type de fichier (p. ex., PDF, DOCX) et la taille (p. ex., 273 KB) dans le texte du lien pour des raisons d'accessibilité et de sensibilisation des utilisateurs."
+				]
+			}
+		}
+	],
+	"iteration": [
+		{
+			"@id": "_:iteration_gc_dwnld_2",
+			"name": "Download link - Iteration 2",
+			"date": "2025-08",
+			"detectableBy": "a.gc-dwnld",
+			"predecesor": "_:iteration_gc_dwnld_1",
+			"status": "stable",
+			"breaking": [
+				"New HTML pattern with new CSS."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<a href=\"#\" class=\"gc-dwnld\" download>\n\t<img src=\"[image url]\" alt=\"\">\n\t<span>[Document Title]<br>(<abbr title=\"Portable Document Format\">PDF</abbr>, 273 <abbr title=\"KiloByte\">KB</abbr>)</span>\n</a>"
+				}
+			]
+		},
+		{
+			"@id": "_:iteration_gc_dwnld_1",
+			"name": "Download link - Iteration 1 (demoted)",
+			"date": "2014-06",
+			"detectableBy": ".gc-dwnld-link .gc-dwnld",
+			"successor": "_:iteration_gc_dwnld_2",
+			"status": "demoted",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<a class=\"gc-dwnld-lnk\" href=\"#\">\n\t<div class=\"well gc-dwnld\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-xs-4\">\n\t\t\t\t<p><img class=\"img-responsive thumbnail gc-dwnld-img\" src=\"[image url]\" alt=\"\" /></p>\n\t\t\t</div>\n\t\t\t<div class=\"col-xs-8\">\n\t\t\t\t<p class=\"gc-dwnld-txt\">\n\t\t\t\t\t<span>[Document Title]</span>\n\t\t\t\t\t<abbr title=\"KiloByte\">KB</abbr>)</span>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a>"
+				}
+			],
+			"example": {
+				"en": [
+					{ "href": "demoted/gc-dwnld_v1-en.html", "text": "Download link" }
+				],
+				"fr": [
+					{ "href": "demoted/gc-dwnld_v1-fr.html", "text": "Lien de téléchargement" }
+				]
+			}
+		}
+	]
 }
 ,{
 	"@context": {
@@ -1194,6 +1592,9 @@
 	"@context": {
 		"@version": 1.1,
 		"dct": "http://purl.org/dc/terms/",
+		"title": {
+			"@id": "dct:title", "@container": "@language"
+		},
 		"title": { "@id": "dct:title", "@container": "@language" },
 		"description": { "@id": "dct:description", "@container": "@language" },
 		"modified": "dct:modified"
@@ -1209,7 +1610,7 @@
 	"modified": "2025-07-11",
 	"componentName": "gc-minister",
 	"status": "stable",
-	"version": "1.2",
+	"version": "1.2.1",
 	"pages": {
 		"examples": [
 			{
@@ -1302,6 +1703,10 @@
 				"_:implement_minister_v1_to_v1.1"
 			],
 			"history": [
+				{
+					"en": "August 2025 - Updated recommended image dimensions from 200x250px to 200x200px for better visual consistency.",
+					"fr": "Août 2025 - Mise à jour des dimensions d'image recommandées de 200x250px à 200x200px pour une meilleure cohérence visuelle."
+				},
 				{	"en": "April 2025 - Fixed issue where links were not clickable in mobile view.",
 					"fr": "Avril 2025 - Problème résolu où les liens n'étaient pas cliquables dans la vue mobile."
 				},
@@ -1365,10 +1770,10 @@
 			},
 			"notes": {
 				"en": [
-					"The recommended image size is 200px by 250px."
+					"The recommended image size is 200px by 200px."
 				],
 				"fr": [
-					"La taille d'image recommandée est de 200px par 250px."
+					"La taille d'image recommandée est de 200px par 200px."
 				]
 			},
 			"sample": {
@@ -1431,10 +1836,10 @@
 			},
 			"notes": {
 				"en": [
-					"The recommended image size is 200px by 250px."
+					"The recommended image size is 200px by 200px."
 				],
 				"fr": [
-					"La taille d'image recommandée est de 200px par 250px."
+					"La taille d'image recommandée est de 200px par 200px."
 				]
 			},
 			"sample": {
@@ -1521,7 +1926,6 @@
 					"@language": "en",
 					"description": "Code sample with image",
 					"code": "<section class=\"gc-minister\">\n\t<h2>Secretary(ies) of State</h2>\n\t<div class=\"row wb-eqht-grd\">\n\t\t<div class=\"col-xs-12 col-md-4\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-xs-12 col-md-7 pull-right\">\n\t\t\t\t\t<h3><a href=\"#\">The Honourable [Minister name]</a></h3>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-5\">\n\t\t\t\t\t <img src=\"[image url]\" alt=\"The Honourable [Minister name]\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-xs-12 col-md-7\">\n\t\t\t\t\t<p>[Official title]</p>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"\">Mandate letter</a></li>\n\t\t\t\t\t\t<li><a href=\"\">Briefing book</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>"
-
 				},
 				{
 					"@type": "source-code",
@@ -1554,7 +1958,7 @@
 				"Ministers > Briefing book text (type: STRING)",
 				"Ministers > Briefing book URL (type: STRING)"
 			],
-			"mediaConsiderations": "Recommended image size: 200x250px."
+			"mediaConsiderations": "Recommended image size: 200x200px."
 		},
 		{
 			"@id": "_:cs_minister",
@@ -1597,10 +2001,10 @@
 		"en": "Features top tasks related to the page it is on.",
 		"fr": "Comprend des tâches principales liées à la page sur laquelle elles se trouvent."
 	},
-	"modified": "2025-05-08",
+	"modified": "2025-09-29",
 	"componentName": "gc-most-requested",
 	"status": "stable",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"pages": {
 		"docs": [
 			{
@@ -1624,6 +2028,16 @@
 				"title": "En demande",
 				"language": "fr",
 				"path": "gc-most-requested-fr.html"
+			},
+			{
+				"title": "Most requested - Two items",
+				"language": "en",
+				"path": "gc-most-requested-two-items-en.html"
+			},
+			{
+				"title": "En demande - Deux éléments",
+				"language": "fr",
+				"path": "gc-most-requested-two-items-fr.html"
 			},
 			{
 				"title": "Most requested - bad implementation",
@@ -1653,11 +2067,15 @@
 				"en": "https://design.canada.ca/common-design-patterns/most-requested.html",
 				"fr": "https://conception.canada.ca/configurations-conception-communes/en-demande.html"
 			},
-			"iteration": "_:iteration_mostrequested_2",
+			"iteration": "_:iteration_mostrequested_3",
 			"example": [
 				{
 					"en": { "href": "gc-most-requested-en.html", "text": "Most requested" },
 					"fr": { "href": "gc-most-requested-fr.html", "text": "En demande" }
+				},
+								{
+					"en": { "href": "gc-most-requested-two-items-en.html", "text": "Most requested - Two items" },
+					"fr": { "href": "gc-most-requested-two-items-fr.html", "text": "En demande - Deux éléments" }
 				},
 				{
 					"en": { "href": "gc-most-requested-bad-en.html", "text": "Most requested - bad implementation" },
@@ -1668,6 +2086,10 @@
 				"_:implement_mostrequested"
 			],
 			"history": [
+				{
+					"en": "September 2025 - Items are displayed horizontally when there are only two list items on medium screen breakpoint and larger.",
+					"fr": "Septembre 2025 - Les éléments sont affichés horizontalement quand il y a seulement deux éléments de liste à partir d'un breakpoint écran moyen et plus."
+				},
 				{
 					"en": "May 2025 - Items are now distributed vertically instead of horizontally.",
 					"fr": "Mai 2025 - Les items sont maintenant distribués verticalement plutôt que horizontalement."
@@ -1733,11 +2155,30 @@
 	],
 	"iteration": [
 		{
+			"@id": "_:iteration_mostrequested_3",
+			"name": "Most requested - Iteration 3",
+			"date": "2025-09",
+			"detectableBy": ".gc-most-requested:not(.provisional)",
+			"predecessor": "_:iteration_mostrequested_2",
+			"additions": [
+				"Changed display of list items from vertical to horizontal when there are only two list items on medium screen breakpoint and larger. This does not change the component's core behaviour, so this is a Minor change."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<section class=\"gc-most-requested\">\n\t<div class=\"container\">\n\t\t<h2>Most requested</h2>\n\t\t<ul>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 1]</a></li>\n\t\t\t<li><a href=\"#\">[Top task hyperlink 2]</a></li>\n\t\t</ul>\n\t</div>\n</section>"
+				}
+			]
+		},
+		{
 			"@id": "_:iteration_mostrequested_2",
 			"name": "Most requested - Iteration 2",
 			"date": "2024-11",
 			"detectableBy": ".gc-most-requested:not(.provisional)",
 			"predecessor": "_:iteration_mostrequested_1",
+			"successor": "_:iteration_mostrequested_3",
 			"additions": [
 				"Changed display of items from flex to column-count. This change is perceptible and a user will notice that change but it won't change the component essential behaviour. So this is a Minor change."
 			],
@@ -2644,6 +3085,40 @@
 		"modified": "dct:modified"
 	},
 	"title": {
+		"en": "Glyphicons",
+		"fr": "Glyphicons"
+	},
+	"description": {
+		"en": "Monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
+		"fr": "Icônes et symboles monochromes, créés en mettant l'accent sur la simplicité et la facilité d'orientation."
+	},
+	"modified": "2025-09-16",
+	"componentName": "glyphicons",
+	"status": "stable",
+	"pages": {
+		"examples": [
+			{
+				"title": "Glyphicons",
+				"language": "en",
+				"path": "glyphicons-en.html"
+			},
+		{
+				"title": "Glyphicons",
+				"language": "fr",
+				"path": "glyphicons-fr.html"
+			}
+		]
+	}
+}
+,{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
 		"en": "Well header responsive",
 		"fr": "Entête well responsive"
 	},
@@ -2839,6 +3314,233 @@
 }
 ,{
 	"@context": {
+		"@version": 1.0,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "List steps",
+		"fr": "Liste des étapes"
+	},
+	"description": {
+		"en": "Style ordered list and divs with steps number in circles.",
+		"fr": "Mise en style d'une liste ordonnée et de divs avec des numéros d'étape dans un cercle"
+	},
+	"modified": "2025-09-16",
+	"componentName": "list-steps",
+	"status": "stable",
+	"version": "1.0",
+	"pages": {
+		"examples": [
+			{
+				"title": "List steps - working example",
+				"language": "en",
+				"path": "list-steps-en.html"
+			},
+			{
+				"title": "Liste des étapes - example pratique",
+				"language": "fr",
+				"path": "list-steps-fr.html"
+			}
+		],
+		"docs": [
+			{
+				"title": "List steps - Documentation",
+				"language": "en",
+				"path": "list-steps-documentation-en.html"
+			},
+			{
+				"title": "Liste des étapes - Documentation",
+				"language": "fr",
+				"path": "list-steps-documentation-fr.html"
+			}
+		],
+		"reports": [
+			{
+				"title": "Accessibility assessment #1",
+				"language": "en",
+				"path": "reports/a11y-1-en.html"
+			},
+			{
+				"title": "Évaluation de l'accessibilité #1",
+				"language": "fr",
+				"path": "reports/a11y-1-fr.html"
+			}
+		]
+	},
+	"a11yGuidance": "No accessibility guidance.",
+	"variations": [
+		{
+			"name": {
+				"en": "List steps",
+				"fr": "Liste des étapes"
+			},
+			"status": "stable",
+			"description": {
+				"en": "Style ordered list and divs with steps number in circles.",
+				"fr": "Mise en style d'une liste ordonnée et de divs avec des numéros d'étape dans un cercle"
+			},
+			"iteration": "_:iteration_list_steps_1",
+			"example": [
+				{
+					"en": { "href": "list-steps-en.html", "text": "List steps" },
+					"fr": { "href": "list-steps-fr.html", "text": "Liste des étapes" }
+				}
+			],
+			"implementation": [
+				"_:implement_list_steps"
+			],
+			"history": [
+				{
+					"en": "June 2024 - Reduced excessive spacing for small amount of content. Removed background color for default list steps number (except in striped mode) as was not showing up properly in high contrast mode. Updated governance towards stabilization.",
+					"fr": "Juin 2024 - Réduction de l'espacement excessif pour les petites quantités de contenu. Suppression de la couleur d'arrière-plan du numéro d'étape par défaut de la liste (sauf en mode rayé), car il ne s'affichait pas correctement en mode contraste élevé. Mise à jour de la gouvernance pour la stabilisation."
+				},
+				{
+					"en": "August 2024 - Fixed issue with printing pages as some text would be cut off.",
+					"fr": "Août 2024 - Correction d'un problème d'impression de pages car certains textes étaient coupés."
+				},
+				{
+					"en": "October 2024 - Added customized option to use start attribute for items 2 to 10.",
+					"fr": "Octobre 2024 - Ajout d'une option personnalisée pour utiliser l'attribut de démarrage pour les éléments 2 à 10."
+				},
+				{
+					"en": "September 2025 - Stabilized the component.",
+					"fr": "Septembre 2025 - La composante a été stabilisée."
+				}
+			]
+		}
+	],
+	"implementation": [
+		{
+			"@id": "_:implement_list_steps",
+			"iteration": "_:iteration_list_steps_1",
+			"name": {
+				"en": "Standard",
+				"fr": "Standard"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the component manually.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant manuellement."
+			},
+			"instructions": {
+				"en": [
+					"Refer to the following code samples."
+				],
+				"fr": [
+					"Référez-vous au code qui suit."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "List steps (default):",
+						"code": "<ol class=\"lst-stps\">"
+					},
+					{
+						"@type": "source-code",
+						"description": "List steps (lead zero):",
+						"code": "<ol class=\"lst-stps ld-zr\">"
+					},
+					{
+						"@type": "source-code",
+						"description": "List steps (sub nested):",
+						"code": "...\n<li>\n\t<ol class=\"lst-stps-sub\">\n\t ... \n\t</ol>\n</li>\n ..."
+					},
+					{
+						"@type": "source-code",
+						"description": "List steps (striped):",
+						"code": "<ol class=\"lst-stps stps-strpd\">"
+					},
+					{
+						"@type": "source-code",
+						"description": "List steps (striped sub nested):",
+						"code": "<ol class=\"lst-stps stps-strpd\">\n...\n<li>\n\t<ol class=\"lst-stps-sub stps-strpd\">\n\t ... \n\t</ol>\n</li>\n ...\n</ol>"
+					},
+					{
+						"@type": "source-code",
+						"description": "List steps (striped sub nested lead zero):",
+						"code": "<ol class=\"lst-stps ld-zr stps-strpd\">\n...\n<li>\n\t<ol class=\"lst-stps-sub stps-strpd\">\n\t ... \n\t</ol>\n</li>\n ...\n</ol>"
+					},
+					{
+						"@type": "source-code",
+						"description": "List steps (start attribute):",
+						"code": "<ol class=\"lst-stps\" start=\"2\">"
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (défaut):",
+						"code": "<ol class=\"lst-stps\">"
+					},
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (avec zéro en tête):",
+						"code": "<ol class=\"lst-stps ld-zr\">"
+					},
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (sous-listes imbriquées):",
+						"code": "...\n<li>\n\t<ol class=\"lst-stps-sub\">\n\t ... \n\t</ol>\n</li>\n ..."
+					},
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (rayées):",
+						"code": "<ol class=\"lst-stps stps-strpd\">"
+					},
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (rayées sous-listes imbriquées):",
+						"code": "<ol class=\"lst-stps stps-strpd\">\n...\n<li>\n\t<ol class=\"lst-stps-sub stps-strpd\">\n\t ... \n\t</ol>\n</li>\n ...\n</ol>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (rayées sous-listes imbriquées avec zéro en tête):",
+						"code": "<ol class=\"lst-stps ld-zr stps-strpd\">\n...\n<li>\n\t<ol class=\"lst-stps-sub stps-strpd\">\n\t ... \n\t</ol>\n</li>\n ...\n</ol>"
+					},
+					{
+						"@type": "source-code",
+						"description": "Liste des étapes (Attribut de début):",
+						"code": "<ol class=\"lst-stps\" start=\"2\">"
+					}
+				]
+			}
+		}
+	],
+	"iteration": [
+		{
+			"@id": "_:iteration_list_steps_1",
+			"name": "List steps - Iteration 1",
+			"date": "2025-07",
+			"detectableBy": ".lst-stps",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": "<ol class=\"lst-stps\">"
+				}
+			]
+		}
+	],
+	"changesets": [
+		{
+			"@id": "_:cs_list_steps_1",
+			"name": "List steps",
+			"status": "stable",
+			"baseOnIteration": "_:iteration_list_steps_1",
+			"detectableBy": ".lst-stps",
+			"layout": "Not applicable",
+			"style": "Style ordered list and divs with steps number in circles.",
+			"semantic": "Not applicable"
+		}
+	]
+}
+,{
+	"@context": {
 		"@version": 1.1,
 		"dct": "http://purl.org/dc/terms/",
 		"title": { "@id": "dct:title", "@container": "@language" },
@@ -2867,6 +3569,41 @@
 				"title": "Liste - Style additionnel",
 				"language": "fr",
 				"path": "list-fr.html"
+			}
+		]
+	}
+}
+,{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "Panels",
+		"fr": "Panneaux"
+	},
+	"description": {
+		"en": "Use to create a visual grouping of content. Panels have colour themed options, as well as offer a distinct header and footer.",
+		"fr": "Les utiliser pour créer un groupement visuel de contenu. Les panneaux ont des options de couleur par thème, en plus d'offrir un en-tête et un pied de page distincts."
+	},
+	"modified": "2025-09-18",
+	"componentName": "panels",
+	"processing": "baseline",
+	"status": "stable",
+	"pages": {
+		"examples": [
+			{
+				"title": "Panels",
+				"language": "en",
+				"path": "panels-en.html"
+			},
+			{
+				"title": "Panneaux",
+				"language": "fr",
+				"path": "panels-fr.html"
 			}
 		]
 	}
