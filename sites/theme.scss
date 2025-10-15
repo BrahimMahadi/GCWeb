@@ -167,12 +167,11 @@
 @import "../components/baseline/base";
 @import "../components/base";
 @import "../components/base2";
-@import "../components/provisional";
 
 @import "../components/gc-dwnld/base";
 @import "../components/gc-nws/base";
 @import "../components/gc-srvinfo/base";
-@import "../components/redacted";
+@import "../components/redacted/redacted";
 @import "../components/dshbrd/base";
 @import "../components/triangle-up";
 @import "../components/byline/base";
@@ -183,7 +182,7 @@
 @import "../components/pagination/base";
 @import "../components/toc/base";
 @import "../components/header-rwd/header-rwd";
-@import "../components/tbl-floatcolumn";
+@import "../components/tbl-floatcolumn/tbl-floatcolumn";
 @import "../components/wb-fieldflow/base";
 @import "../components/gc-chckbxrdio/base";
 @import "../components/gc-features/base";
@@ -257,6 +256,7 @@
 	@import "../components/header-rwd/screen-xs-max";
 	@import "../components/pagination/screen-xs-max";
 	@import "../components/toc/screen-xs-max";
+	@import "../components/list-steps/screen-xs-max";
 
 	@import "../templates/campaign/screen-xs-max";
 	@import "../templates/application/screen-xs-max";
@@ -328,7 +328,6 @@
 	@import "../common/spacing/screen-sm-min";
 
 	@import "../components/conjunctions/screen-sm-min";
-	@import "../components/list-steps/screen-sm-min";
 }
 
 /* Medium view and over */
@@ -450,6 +449,7 @@
 	@import "wet-boew/src/plugins/tabs/print";
 	@import "../components/gc-features/print"; /* Deprecated as v4.0.28 */
 	@import "../components/gc-follow-us/print";
+	@import "../components/list-steps/print";
 
 	@import "../templates/pagebrand/print";
 	@import "../templates/campaign/print";
