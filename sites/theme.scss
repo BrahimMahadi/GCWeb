@@ -162,6 +162,7 @@
 @import "wet-boew/src/plugins/feeds/base";
 @import "wet-boew/src/plugins/paginate/base";
 @import "../wet-boew/feeds/base"; // CSS for feeds plugin GC override
+@import "../wet-boew/geomap/base"; // CSS for geomap plugin GC override
 
 // Components GC Theme
 @import "../components/baseline/base";
@@ -201,7 +202,7 @@
 
 // Template
 @import "../templates/pagebrand/base";
-@import "../templates/search";
+@import "../templates/search/search";
 @import "../templates/home/base";
 @import "../templates/blog";
 @import "../templates/social-media-centre/base";
