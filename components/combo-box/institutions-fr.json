@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Service canadien d’appui aux tribunaux administratifs",
+    "tag": "gc:institutions/administrative-tribunals-support-service"
+  },
+  {
+    "name": "Agence de promotion économique du Canada atlantique",
+    "tag": "gc:institutions/atlantic-canada-opportunities"
+  },
+  {
+    "name": "Agence des services frontaliers du Canada",
+    "tag": "gc:institutions/canada-border-services-agency"
+  },
+  {
+    "name": "Agence de l’eau du Canada",
+    "tag": "gc:institutions/canada-water-agency"
+  },
+  {
+    "name": "Commission du droit du Canada",
+    "tag": "gc:institutions/law-commission-of-canada"
+  },
+  {
+    "name": "Logement, Infrastructures et Collectivités du Canada",
+    "tag": "gc:institutions/office-infrastructure"
+  },
+  {
+    "name": "Bureau de la dirigeante principale de l’accessibilité",
+    "tag": "gc:institutions/office-of-the-chief-accessibility-officer"
+  },
+  {
+    "name": "Développement économique Canada pour le Pacifique",
+    "tag": "gc:institutions/pacific-economic-development"
+  },
+  {
+    "name": "Développement économique Canada pour les Prairies",
+    "tag": "gc:institutions/prairies-economic-development"
+  },
+  {
+    "name": "Agence du revenu du Canada",
+    "tag": "gc:institutions/revenue-agency"
+  },
+  {
+    "name": "École de la fonction publique du Canada",
+    "tag": "gc:institutions/school-public-service"
+  },
+  {
+    "name": "Centre canadien d’hygiène et de sécurité au travail",
+    "tag": "gc:institutions/canadian-centre-for-occupational-health-and-safety"
+  },
+  {
+    "name": "Garde côtière canadienne",
+    "tag": "gc:institutions/canadian-coast-guard"
+  },
+  {
+    "name": "Agence canadienne d’inspection des aliments",
+    "tag": "gc:institutions/food-inspection-agency"
+  },
+  {
+    "name": "Commission canadienne des grains",
+    "tag": "gc:institutions/grain-commission"
+  },
+  {
+    "name": "Instituts de recherche en santé du Canada",
+    "tag": "gc:institutions/institutes-health-research"
+  },
+  {
+    "name": "Tribunal canadien du commerce extérieur",
+    "tag": "gc:institutions/canadian-international-trade-tribunal"
+  },
+  {
+    "name": "Agence canadienne de développement économique du Nord",
+    "tag": "gc:institutions/canadian-northern-economic-development-agency"
+  },
+  {
+    "name": "Commission canadienne de sûreté nucléaire",
+    "tag": "gc:institutions/canadian-nuclear-safety-commission"
+  },
+  {
+    "name": "Conseil de la radiodiffusion et des télécommunications canadiennes",
+    "tag": "gc:institutions/canadian-radio-television-and-telecommunications-commission"
+  },
+  {
+    "name": "Service canadien du renseignement de sécurité",
+    "tag": "gc:institutions/canadian-security-intelligence-service"
+  },
+  {
+    "name": "Agence spatiale canadienne",
+    "tag": "gc:institutions/space-agency"
+  },
+  {
+    "name": "Bureau de la sécurité des transports du Canada",
+    "tag": "gc:institutions/canadian-transportation-accident-investigation-and-safety-board"
+  },
+  {
+    "name": "Office des transports du Canada",
+    "tag": "gc:institutions/transportation-agency"
+  },
+  {
+    "name": "Centre de la sécurité des télécommunications Canada",
+    "tag": "gc:institutions/communications-security"
+  },
+  {
+    "name": "Service correctionnel Canada",
+    "tag": "gc:institutions/correctional-service"
+  },
+  {
+    "name": "Agriculture et Agroalimentaire Canada",
+    "tag": "gc:institutions/agriculture-agri-food"
+  },
+  {
+    "name": "Patrimoine canadien",
+    "tag": "gc:institutions/canadian-heritage"
+  },
+  {
+    "name": "Immigration Réfugiés et Citoyenneté Canada",
+    "tag": "gc:institutions/department-of-citizenship-and-immigration"
+  },
+  {
+    "name": "Emploi et Développement social Canada",
+    "tag": "gc:institutions/department-of-employment-and-social-development"
+  },
+  {
+    "name": "Ministère des Finances Canada",
+    "tag": "gc:institutions/department-finance"
+  },
+  {
+    "name": "Pêches et Océans Canada",
+    "tag": "gc:institutions/fisheries-oceans"
+  },
+  {
+    "name": "Affaires mondiales Canada",
+    "tag": "gc:institutions/department-of-foreign-affairs-trade-and-development"
+  },
+  {
+    "name": "Santé Canada",
+    "tag": "gc:institutions/department-of-health"
+  },
+  {
+    "name": "Innovation Sciences et Développement économique Canada",
+    "tag": "gc:institutions/department-of-industry"
+  },
+  {
+    "name": "Ministère de la Justice Canada",
+    "tag": "gc:institutions/department-justice"
+  },
+  {
+    "name": "Défense nationale",
+    "tag": "gc:institutions/department-national-defense"
+  },
+  {
+    "name": "Ressources naturelles Canada",
+    "tag": "gc:institutions/natural-resources-canada"
+  },
+  {
+    "name": "Sécurité publique Canada",
+    "tag": "gc:institutions/public-safety-canada"
+  },
+  {
+    "name": "Services publics et Approvisionnement Canada",
+    "tag": "gc:institutions/department-of-public-works-and-government-services"
+  },
+  {
+    "name": "Transports Canada",
+    "tag": "gc:institutions/department-of-transport"
+  },
+  {
+    "name": "Anciens Combattants Canada",
+    "tag": "gc:institutions/veterans-affairs-canada"
+  },
+  {
+    "name": "Environnement et Changement climatique Canada",
+    "tag": "gc:institutions/department-of-the-environment"
+  },
+  {
+    "name": "Développement économique Canada pour les régions du Québec",
+    "tag": "gc:institutions/economic-development-quebec-regions"
+  },
+  {
+    "name": "Agence fédérale de développement économique pour le Sud de l’Ontario",
+    "tag": "gc:institutions/economic-development-southern-ontario"
+  },
+  {
+    "name": "Agence de la consommation en matière financière du Canada",
+    "tag": "gc:institutions/financial-consumer-agency"
+  },
+  {
+    "name": "Centre d’analyse des opérations et déclarations financières du Canada",
+    "tag": "gc:institutions/financial-transactions-reports-analysis"
+  },
+  {
+    "name": "Commission de l'immigration et du statut de réfugié du Canada",
+    "tag": "gc:institutions/immigration-refugee"
+  },
+  {
+    "name": "Bibliothèque et Archives Canada",
+    "tag": "gc:institutions/library-archives"
+  },
+  {
+    "name": "Commission d'examen des plaintes concernant la police militaire du Canada",
+    "tag": "gc:institutions/military-police-complaints"
+  },
+  {
+    "name": "Régie de l'énergie du Canada",
+    "tag": "gc:institutions/national-energy-board"
+  },
+  {
+    "name": "Office national du film",
+    "tag": "gc:institutions/national-film-board"
+  },
+  {
+    "name": "Conseil national de recherches Canada",
+    "tag": "gc:institutions/national-research-council"
+  },
+  {
+    "name": "Conseil de recherches en sciences naturelles et en génie",
+    "tag": "gc:institutions/sciences-engineering-research"
+  },
+  {
+    "name": "Femmes et Égalité des genres Canada",
+    "tag": "gc:institutions/status-women"
+  },
+  {
+    "name": "Bureau de l'ombudsman de l'approvisionnement",
+    "tag": "gc:institutions/procurement-ombudsman"
+  },
+  {
+    "name": "Parcs Canada",
+    "tag": "gc:institutions/parks-canada"
+  },
+  {
+    "name": "Commission des libérations conditionnelles du Canada",
+    "tag": "gc:institutions/parole-board"
+  },
+  {
+    "name": "Conseil d'examen du prix des médicaments brevetés Canada",
+    "tag": "gc:institutions/patented-medicine-prices-review-board"
+  },
+  {
+    "name": "Savoir polaire Canada",
+    "tag": "gc:institutions/polar-knowledge"
+  },
+  {
+    "name": "Bureau du Conseil privé",
+    "tag": "gc:institutions/privy-council"
+  },
+  {
+    "name": "Agence de la santé publique du Canada",
+    "tag": "gc:institutions/public-health-agency-of-canada"
+  },
+  {
+    "name": "Commission de la fonction publique du Canada",
+    "tag": "gc:institutions/public-service-commission"
+  },
+  {
+    "name": "Services partagés Canada",
+    "tag": "gc:institutions/shared-services"
+  },
+  {
+    "name": "Conseil de recherches en sciences humaines du Canada",
+    "tag": "gc:institutions/social-sciences-humanities-research"
+  },
+  {
+    "name": "Statistique Canada",
+    "tag": "gc:institutions/statistics-canada"
+  },
+  {
+    "name": "Secrétariat du Conseil du Trésor du Canada",
+    "tag": "gc:institutions/treasury-board-secretariat"
+  },
+  {
+    "name": "Chaires de recherche du Canada",
+    "tag": "gc:institutions/research-chairs"
+  },
+  {
+    "name": "Institut canadien de conservation",
+    "tag": "gc:institutions/conservation-institute"
+  },
+  {
+    "name": "Office de la propriété intellectuelle du Canada",
+    "tag": "gc:institutions/intellectual-property-office"
+  },
+  {
+    "name": "Bureau de la concurrence Canada",
+    "tag": "gc:institutions/competition-bureau"
+  },
+  {
+    "name": "Commission d'examen de la rémunération des juges",
+    "tag": "gc:institutions/judicial-compensation-and-benefits-commission"
+  },
+  {
+    "name": "Bureau de l'ombudsman de la Défense nationale et des Forces armées canadiennes",
+    "tag": "gc:institutions/national-defence-canadian-armed-forces-ombudsman"
+  },
+  {
+    "name": "Bureau de l'ombudsman des contribuables",
+    "tag": "gc:institutions/taxpayers-ombudsman"
+  },
+  {
+    "name": "Gendarmerie royale du Canada",
+    "tag": "gc:institutions/royal-mounted-police"
+  },
+  {
+    "name": "Commission des champs de bataille nationaux",
+    "tag": "gc:institutions/national-battlefields-commission"
+  },
+  {
+    "name": "Commandement des Forces d'opérations spéciales du Canada",
+    "tag": "gc:institutions/special-operations-forces-command"
+  },
+  {
+    "name": "Affaires intergouvernementales",
+    "tag": "gc:institutions/intergovernmental-affairs"
+  },
+  {
+    "name": "Institutions démocratiques",
+    "tag": "gc:institutions/democratic-institutions"
+  },
+  {
+    "name": "FedNor",
+    "tag": "gc:institutions/fednor"
+  },
+  {
+    "name": "Leader du gouvernement à la Chambre des communes",
+    "tag": "gc:institutions/government-house-leader"
+  },
+  {
+    "name": "Services aux Autochtones Canada",
+    "tag": "gc:institutions/indigenous-services-canada"
+  },
+  {
+    "name": "Relations Couronne-Autochtones et Affaires du Nord Canada",
+    "tag": "gc:institutions/crown-indigenous-relations-and-northern-affairs-canada"
+  },
+  {
+    "name": "Banque de l'infrastructure du Canada",
+    "tag": "gc:institutions/canada-infrastructure-bank"
+  },
+  {
+    "name": "Normes d’accessibilité Canada",
+    "tag": "gc:institutions/canadian-accessibility-standards-development-organization"
+  },
+  {
+    "name": "Comité de coordination de la recherche au Canada",
+    "tag": "gc:institutions/canada-research-coordinating-committee"
+  },
+  {
+    "name": "Agence d'évaluation d'impact du Canada",
+    "tag": "gc:institutions/impact-assessment-agency"
+  },
+  {
+    "name": "Agence de l’investissement pour la défense",
+    "tag": "gc:institutions/defence-investment-agency"
+  },
+  {
+    "name": "Unité de l’économie canadienne",
+    "tag": "gc:institutions/one-canadian-economy"
+  }
+]

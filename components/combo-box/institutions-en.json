@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Administrative Tribunals Support Service of Canada",
+    "tag": "gc:institutions/administrative-tribunals-support-service"
+  },
+  {
+    "name": "Atlantic Canada Opportunities Agency",
+    "tag": "gc:institutions/atlantic-canada-opportunities"
+  },
+  {
+    "name": "Canada Border Services Agency",
+    "tag": "gc:institutions/canada-border-services-agency"
+  },
+  {
+    "name": "Canada Water Agency",
+    "tag": "gc:institutions/canada-water-agency"
+  },
+  {
+    "name": "Law Commission of Canada",
+    "tag": "gc:institutions/law-commission-of-canada"
+  },
+  {
+    "name": "Housing, Infrastructure and Communities Canada",
+    "tag": "gc:institutions/office-infrastructure"
+  },
+  {
+    "name": "Office of the Chief Accessibility Officer",
+    "tag": "gc:institutions/office-of-the-chief-accessibility-officer"
+  },
+  {
+    "name": "Pacific Economic Development Canada",
+    "tag": "gc:institutions/pacific-economic-development"
+  },
+  {
+    "name": "Prairies Economic Development Canada",
+    "tag": "gc:institutions/prairies-economic-development"
+  },
+  {
+    "name": "Canada Revenue Agency",
+    "tag": "gc:institutions/revenue-agency"
+  },
+  {
+    "name": "Canada School of Public Service",
+    "tag": "gc:institutions/school-public-service"
+  },
+  {
+    "name": "Canadian Centre for Occupational Health and Safety",
+    "tag": "gc:institutions/canadian-centre-for-occupational-health-and-safety"
+  },
+  {
+    "name": "Canadian Coast Guard",
+    "tag": "gc:institutions/canadian-coast-guard"
+  },
+  {
+    "name": "Canadian Food Inspection Agency",
+    "tag": "gc:institutions/food-inspection-agency"
+  },
+  {
+    "name": "Canadian Grain Commission",
+    "tag": "gc:institutions/grain-commission"
+  },
+  {
+    "name": "Canadian Institutes of Health Research",
+    "tag": "gc:institutions/institutes-health-research"
+  },
+  {
+    "name": "Canadian International Trade Tribunal",
+    "tag": "gc:institutions/canadian-international-trade-tribunal"
+  },
+  {
+    "name": "Canadian Northern Economic Development Agency",
+    "tag": "gc:institutions/canadian-northern-economic-development-agency"
+  },
+  {
+    "name": "Canadian Nuclear Safety Commission",
+    "tag": "gc:institutions/canadian-nuclear-safety-commission"
+  },
+  {
+    "name": "Canadian Radio-television and Telecommunications Commission",
+    "tag": "gc:institutions/canadian-radio-television-and-telecommunications-commission"
+  },
+  {
+    "name": "Canadian Security Intelligence Service",
+    "tag": "gc:institutions/canadian-security-intelligence-service"
+  },
+  {
+    "name": "Canadian Space Agency",
+    "tag": "gc:institutions/space-agency"
+  },
+  {
+    "name": "Transportation Safety Board of Canada",
+    "tag": "gc:institutions/canadian-transportation-accident-investigation-and-safety-board"
+  },
+  {
+    "name": "Canadian Transportation Agency",
+    "tag": "gc:institutions/transportation-agency"
+  },
+  {
+    "name": "Communications Security Establishment Canada",
+    "tag": "gc:institutions/communications-security"
+  },
+  {
+    "name": "Correctional Service Canada",
+    "tag": "gc:institutions/correctional-service"
+  },
+  {
+    "name": "Agriculture and Agri-Food Canada",
+    "tag": "gc:institutions/agriculture-agri-food"
+  },
+  {
+    "name": "Canadian Heritage",
+    "tag": "gc:institutions/canadian-heritage"
+  },
+  {
+    "name": "Immigration Refugees and Citizenship Canada",
+    "tag": "gc:institutions/department-of-citizenship-and-immigration"
+  },
+  {
+    "name": "Employment and Social Development Canada",
+    "tag": "gc:institutions/department-of-employment-and-social-development"
+  },
+  {
+    "name": "Department of Finance Canada",
+    "tag": "gc:institutions/department-finance"
+  },
+  {
+    "name": "Fisheries and Oceans Canada",
+    "tag": "gc:institutions/fisheries-oceans"
+  },
+  {
+    "name": "Global Affairs Canada",
+    "tag": "gc:institutions/department-of-foreign-affairs-trade-and-development"
+  },
+  {
+    "name": "Health Canada",
+    "tag": "gc:institutions/department-of-health"
+  },
+  {
+    "name": "Innovation Science and Economic Development Canada",
+    "tag": "gc:institutions/department-of-industry"
+  },
+  {
+    "name": "Department of Justice Canada",
+    "tag": "gc:institutions/department-justice"
+  },
+  {
+    "name": "National Defence",
+    "tag": "gc:institutions/department-national-defense"
+  },
+  {
+    "name": "Natural Resources Canada",
+    "tag": "gc:institutions/natural-resources-canada"
+  },
+  {
+    "name": "Public Safety Canada",
+    "tag": "gc:institutions/public-safety-canada"
+  },
+  {
+    "name": "Public Services and Procurement Canada",
+    "tag": "gc:institutions/department-of-public-works-and-government-services"
+  },
+  {
+    "name": "Transport Canada",
+    "tag": "gc:institutions/department-of-transport"
+  },
+  {
+    "name": "Veterans Affairs Canada",
+    "tag": "gc:institutions/veterans-affairs-canada"
+  },
+  {
+    "name": "Environment and Climate Change Canada",
+    "tag": "gc:institutions/department-of-the-environment"
+  },
+  {
+    "name": "Canada Economic Development for Quebec Regions",
+    "tag": "gc:institutions/economic-development-quebec-regions"
+  },
+  {
+    "name": "Federal Economic Development Agency for Southern Ontario",
+    "tag": "gc:institutions/economic-development-southern-ontario"
+  },
+  {
+    "name": "Financial Consumer Agency of Canada",
+    "tag": "gc:institutions/financial-consumer-agency"
+  },
+  {
+    "name": "Financial Transactions and Reports Analysis Centre of Canada",
+    "tag": "gc:institutions/financial-transactions-reports-analysis"
+  },
+  {
+    "name": "Immigration and Refugee Board of Canada",
+    "tag": "gc:institutions/immigration-refugee"
+  },
+  {
+    "name": "Library and Archives Canada",
+    "tag": "gc:institutions/library-archives"
+  },
+  {
+    "name": "Military Police Complaints Commission of Canada",
+    "tag": "gc:institutions/military-police-complaints"
+  },
+  {
+    "name": "Canada Energy Regulator",
+    "tag": "gc:institutions/national-energy-board"
+  },
+  {
+    "name": "National Film Board",
+    "tag": "gc:institutions/national-film-board"
+  },
+  {
+    "name": "National Research Council Canada",
+    "tag": "gc:institutions/national-research-council"
+  },
+  {
+    "name": "Natural Sciences and Engineering Research Council",
+    "tag": "gc:institutions/sciences-engineering-research"
+  },
+  {
+    "name": "Women and Gender Equality Canada",
+    "tag": "gc:institutions/status-women"
+  },
+  {
+    "name": "Office of the Procurement Ombudsman",
+    "tag": "gc:institutions/procurement-ombudsman"
+  },
+  {
+    "name": "Parks Canada",
+    "tag": "gc:institutions/parks-canada"
+  },
+  {
+    "name": "Parole Board of Canada",
+    "tag": "gc:institutions/parole-board"
+  },
+  {
+    "name": "Patented Medicine Prices Review Board Canada",
+    "tag": "gc:institutions/patented-medicine-prices-review-board"
+  },
+  {
+    "name": "Polar Knowledge Canada",
+    "tag": "gc:institutions/polar-knowledge"
+  },
+  {
+    "name": "Privy Council Office",
+    "tag": "gc:institutions/privy-council"
+  },
+  {
+    "name": "Public Health Agency of Canada",
+    "tag": "gc:institutions/public-health-agency-of-canada"
+  },
+  {
+    "name": "Public Service Commission of Canada",
+    "tag": "gc:institutions/public-service-commission"
+  },
+  {
+    "name": "Shared Services Canada",
+    "tag": "gc:institutions/shared-services"
+  },
+  {
+    "name": "Social Sciences and Humanities Research Council of Canada",
+    "tag": "gc:institutions/social-sciences-humanities-research"
+  },
+  {
+    "name": "Statistics Canada",
+    "tag": "gc:institutions/statistics-canada"
+  },
+  {
+    "name": "Treasury Board of Canada Secretariat",
+    "tag": "gc:institutions/treasury-board-secretariat"
+  },
+  {
+    "name": "Canada Research Chairs (Tri-agency Institutional Programs Secretariat)",
+    "tag": "gc:institutions/research-chairs"
+  },
+  {
+    "name": "Canadian Conservation Institute",
+    "tag": "gc:institutions/conservation-institute"
+  },
+  {
+    "name": "Canadian Intellectual Property Office",
+    "tag": "gc:institutions/intellectual-property-office"
+  },
+  {
+    "name": "Competition Bureau Canada",
+    "tag": "gc:institutions/competition-bureau"
+  },
+  {
+    "name": "Judicial Compensation and Benefits Commission",
+    "tag": "gc:institutions/judicial-compensation-and-benefits-commission"
+  },
+  {
+    "name": "Office of the National Defence and Canadian Armed Forces Ombudsman",
+    "tag": "gc:institutions/national-defence-canadian-armed-forces-ombudsman"
+  },
+  {
+    "name": "Office of the Taxpayers' Ombudsperson",
+    "tag": "gc:institutions/taxpayers-ombudsman"
+  },
+  {
+    "name": "Royal Canadian Mounted Police",
+    "tag": "gc:institutions/royal-mounted-police"
+  },
+  {
+    "name": "The National Battlefields Commission",
+    "tag": "gc:institutions/national-battlefields-commission"
+  },
+  {
+    "name": "Canadian Special Operations Forces Command",
+    "tag": "gc:institutions/special-operations-forces-command"
+  },
+  {
+    "name": "Intergovernmental Affairs",
+    "tag": "gc:institutions/intergovernmental-affairs"
+  },
+  {
+    "name": "Democratic Institutions",
+    "tag": "gc:institutions/democratic-institutions"
+  },
+  {
+    "name": "FedNor",
+    "tag": "gc:institutions/fednor"
+  },
+  {
+    "name": "Leader of the Government in the House of Commons",
+    "tag": "gc:institutions/government-house-leader"
+  },
+  {
+    "name": "Indigenous Services Canada",
+    "tag": "gc:institutions/indigenous-services-canada"
+  },
+  {
+    "name": "Crown-Indigenous Relations and Northern Affairs Canada",
+    "tag": "gc:institutions/crown-indigenous-relations-and-northern-affairs-canada"
+  },
+  {
+    "name": "Canada Infrastructure Bank",
+    "tag": "gc:institutions/canada-infrastructure-bank"
+  },
+  {
+    "name": "Accessibility Standards Canada",
+    "tag": "gc:institutions/canadian-accessibility-standards-development-organization"
+  },
+  {
+    "name": "Canada Research Coordinating Committee",
+    "tag": "gc:institutions/canada-research-coordinating-committee"
+  },
+  {
+    "name": "Impact Assessment Agency of Canada",
+    "tag": "gc:institutions/impact-assessment-agency"
+  },
+  {
+    "name": "Defence Investment Agency",
+    "tag": "gc:institutions/defence-investment-agency"
+  },
+  {
+    "name": "One Canadian Economy",
+    "tag": "gc:institutions/one-canadian-economy"
+  }
+]

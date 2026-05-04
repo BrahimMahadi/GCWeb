@@ -1,0 +1,2166 @@
+[
+  {
+    "name": "Canada",
+    "tag": "gc:georegions/canada"
+  },
+  {
+    "name": "Territories",
+    "tag": "gc:georegions/canada/territories-6"
+  },
+  {
+    "name": "Yukon",
+    "tag": "gc:georegions/canada/territories-6/yt-60"
+  },
+  {
+    "name": "Yukon",
+    "tag": "gc:georegions/canada/territories-6/yt-60/yukon-6001"
+  },
+  {
+    "name": "Northwest Territories",
+    "tag": "gc:georegions/canada/territories-6/nt-61"
+  },
+  {
+    "name": "Region 1",
+    "tag": "gc:georegions/canada/territories-6/nt-61/region-1-6101"
+  },
+  {
+    "name": "Region 2",
+    "tag": "gc:georegions/canada/territories-6/nt-61/region-2-6102"
+  },
+  {
+    "name": "Region 3",
+    "tag": "gc:georegions/canada/territories-6/nt-61/region-3-6103"
+  },
+  {
+    "name": "Region 4",
+    "tag": "gc:georegions/canada/territories-6/nt-61/region-4-6104"
+  },
+  {
+    "name": "Region 5",
+    "tag": "gc:georegions/canada/territories-6/nt-61/region-5-6105"
+  },
+  {
+    "name": "Region 6",
+    "tag": "gc:georegions/canada/territories-6/nt-61/region-6-6106"
+  },
+  {
+    "name": "Nunavut",
+    "tag": "gc:georegions/canada/territories-6/nu-62"
+  },
+  {
+    "name": "Baffin",
+    "tag": "gc:georegions/canada/territories-6/nu-62/baffin-6204"
+  },
+  {
+    "name": "Keewatin",
+    "tag": "gc:georegions/canada/territories-6/nu-62/keewatin-6205"
+  },
+  {
+    "name": "Kitikmeot",
+    "tag": "gc:georegions/canada/territories-6/nu-62/kitikmeot-6208"
+  },
+  {
+    "name": "British Columbia",
+    "tag": "gc:georegions/canada/bc-59"
+  },
+  {
+    "name": "East Kootenay",
+    "tag": "gc:georegions/canada/bc-59/east-kootenay-5901"
+  },
+  {
+    "name": "Central Kootenay",
+    "tag": "gc:georegions/canada/bc-59/central-kootenay-5903"
+  },
+  {
+    "name": "Kootenay Boundary",
+    "tag": "gc:georegions/canada/bc-59/kootenay-boundary-5905"
+  },
+  {
+    "name": "Okanagan-Similkameen",
+    "tag": "gc:georegions/canada/bc-59/okanagan-similkameen-5907"
+  },
+  {
+    "name": "Fraser Valley",
+    "tag": "gc:georegions/canada/bc-59/fraser-valley-5909"
+  },
+  {
+    "name": "Greater Vancouver",
+    "tag": "gc:georegions/canada/bc-59/greater-vancouver-5915"
+  },
+  {
+    "name": "Capital",
+    "tag": "gc:georegions/canada/bc-59/capital-5917"
+  },
+  {
+    "name": "Cowichan Valley",
+    "tag": "gc:georegions/canada/bc-59/cowichan-valley-5919"
+  },
+  {
+    "name": "Nanaimo",
+    "tag": "gc:georegions/canada/bc-59/nanaimo-5921"
+  },
+  {
+    "name": "Alberni-Clayoquot",
+    "tag": "gc:georegions/canada/bc-59/alberni-clayoquot-5923"
+  },
+  {
+    "name": "Strathcona",
+    "tag": "gc:georegions/canada/bc-59/strathcona-5924"
+  },
+  {
+    "name": "Comox Valley",
+    "tag": "gc:georegions/canada/bc-59/comox-valley-5926"
+  },
+  {
+    "name": "Powell River",
+    "tag": "gc:georegions/canada/bc-59/powell-river-5927"
+  },
+  {
+    "name": "Sunshine Coast",
+    "tag": "gc:georegions/canada/bc-59/sunshine-coast-5929"
+  },
+  {
+    "name": "Squamish-Lillooet",
+    "tag": "gc:georegions/canada/bc-59/squamish-lillooet-5931"
+  },
+  {
+    "name": "Thompson-Nicola",
+    "tag": "gc:georegions/canada/bc-59/thompson-nicola-5933"
+  },
+  {
+    "name": "Central Okanagan",
+    "tag": "gc:georegions/canada/bc-59/central-okanagan-5935"
+  },
+  {
+    "name": "North Okanagan",
+    "tag": "gc:georegions/canada/bc-59/north-okanagan-5937"
+  },
+  {
+    "name": "Columbia-Shuswap",
+    "tag": "gc:georegions/canada/bc-59/columbia-shuswap-5939"
+  },
+  {
+    "name": "Cariboo",
+    "tag": "gc:georegions/canada/bc-59/cariboo-5941"
+  },
+  {
+    "name": "Mount Waddington",
+    "tag": "gc:georegions/canada/bc-59/mount-waddington-5943"
+  },
+  {
+    "name": "Central Coast",
+    "tag": "gc:georegions/canada/bc-59/central-coast-5945"
+  },
+  {
+    "name": "Skeena-Queen Charlotte",
+    "tag": "gc:georegions/canada/bc-59/skeena-queen-charlotte-5947"
+  },
+  {
+    "name": "Kitimat-Stikine",
+    "tag": "gc:georegions/canada/bc-59/kitimat-stikine-5949"
+  },
+  {
+    "name": "Bulkley-Nechako",
+    "tag": "gc:georegions/canada/bc-59/bulkley-nechako-5951"
+  },
+  {
+    "name": "Fraser-Fort George",
+    "tag": "gc:georegions/canada/bc-59/fraser-fort-george-5953"
+  },
+  {
+    "name": "Peace River",
+    "tag": "gc:georegions/canada/bc-59/peace-river-5955"
+  },
+  {
+    "name": "Stikine",
+    "tag": "gc:georegions/canada/bc-59/stikine-5957"
+  },
+  {
+    "name": "Northern Rockies",
+    "tag": "gc:georegions/canada/bc-59/northern-rockies-5959"
+  },
+  {
+    "name": "Atlantic",
+    "tag": "gc:georegions/canada/atlantic-1"
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10"
+  },
+  {
+    "name": "Division No. 1",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-1-1001"
+  },
+  {
+    "name": "Division No. 2",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-2-1002"
+  },
+  {
+    "name": "Division No. 3",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-3-1003"
+  },
+  {
+    "name": "Division No. 4",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-4-1004"
+  },
+  {
+    "name": "Division No. 5",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-5-1005"
+  },
+  {
+    "name": "Division No. 6",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-6-1006"
+  },
+  {
+    "name": "Division No. 7",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-7-1007"
+  },
+  {
+    "name": "Division No. 8",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-8-1008"
+  },
+  {
+    "name": "Division No. 9",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-9-1009"
+  },
+  {
+    "name": "Division No. 10",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-10-1010"
+  },
+  {
+    "name": "Division No. 11",
+    "tag": "gc:georegions/canada/atlantic-1/nl-10/division-no-11-1011"
+  },
+  {
+    "name": "Prince Edward Island",
+    "tag": "gc:georegions/canada/atlantic-1/pe-11"
+  },
+  {
+    "name": "Kings",
+    "tag": "gc:georegions/canada/atlantic-1/pe-11/kings-1101"
+  },
+  {
+    "name": "Queens",
+    "tag": "gc:georegions/canada/atlantic-1/pe-11/queens-1102"
+  },
+  {
+    "name": "Prince",
+    "tag": "gc:georegions/canada/atlantic-1/pe-11/prince-1103"
+  },
+  {
+    "name": "Nova Scotia",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12"
+  },
+  {
+    "name": "Shelburne",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/shelburne-1201"
+  },
+  {
+    "name": "Yarmouth",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/yarmouth-1202"
+  },
+  {
+    "name": "Digby",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/digby-1203"
+  },
+  {
+    "name": "Queens",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/queens-1204"
+  },
+  {
+    "name": "Annapolis",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/annapolis-1205"
+  },
+  {
+    "name": "Lunenburg",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/lunenburg-1206"
+  },
+  {
+    "name": "Kings",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/kings-1207"
+  },
+  {
+    "name": "Hants",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/hants-1208"
+  },
+  {
+    "name": "Halifax",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/halifax-1209"
+  },
+  {
+    "name": "Colchester",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/colchester-1210"
+  },
+  {
+    "name": "Cumberland",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/cumberland-1211"
+  },
+  {
+    "name": "Pictou",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/pictou-1212"
+  },
+  {
+    "name": "Guysborough",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/guysborough-1213"
+  },
+  {
+    "name": "Antigonish",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/antigonish-1214"
+  },
+  {
+    "name": "Inverness",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/inverness-1215"
+  },
+  {
+    "name": "Richmond",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/richmond-1216"
+  },
+  {
+    "name": "Cape Breton",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/cape-breton-1217"
+  },
+  {
+    "name": "Victoria",
+    "tag": "gc:georegions/canada/atlantic-1/ns-12/victoria-1218"
+  },
+  {
+    "name": "New Brunswick",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13"
+  },
+  {
+    "name": "Saint John",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/saint-john-1301"
+  },
+  {
+    "name": "Charlotte",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/charlotte-1302"
+  },
+  {
+    "name": "Sunbury",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/sunbury-1303"
+  },
+  {
+    "name": "Queens",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/queens-1304"
+  },
+  {
+    "name": "Kings",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/kings-1305"
+  },
+  {
+    "name": "Albert",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/albert-1306"
+  },
+  {
+    "name": "Westmorland",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/westmorland-1307"
+  },
+  {
+    "name": "Kent",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/kent-1308"
+  },
+  {
+    "name": "Northumberland",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/northumberland-1309"
+  },
+  {
+    "name": "York",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/york-1310"
+  },
+  {
+    "name": "Carleton",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/carleton-1311"
+  },
+  {
+    "name": "Victoria",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/victoria-1312"
+  },
+  {
+    "name": "Madawaska",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/madawaska-1313"
+  },
+  {
+    "name": "Restigouche",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/restigouche-1314"
+  },
+  {
+    "name": "Gloucester",
+    "tag": "gc:georegions/canada/atlantic-1/nb-13/gloucester-1315"
+  },
+  {
+    "name": "Quebec",
+    "tag": "gc:georegions/canada/qc-24"
+  },
+  {
+    "name": "Les Îles-de-la-Madeleine",
+    "tag": "gc:georegions/canada/qc-24/les-iles-de-la-madeleine-2401"
+  },
+  {
+    "name": "Le Rocher-Percé",
+    "tag": "gc:georegions/canada/qc-24/le-rocher-perce-2402"
+  },
+  {
+    "name": "La Côte-de-Gaspé",
+    "tag": "gc:georegions/canada/qc-24/la-cote-de-gaspe-2403"
+  },
+  {
+    "name": "La Haute-Gaspésie",
+    "tag": "gc:georegions/canada/qc-24/la-haute-gaspesie-2404"
+  },
+  {
+    "name": "Bonaventure",
+    "tag": "gc:georegions/canada/qc-24/bonaventure-2405"
+  },
+  {
+    "name": "Avignon",
+    "tag": "gc:georegions/canada/qc-24/avignon-2406"
+  },
+  {
+    "name": "La Matapédia",
+    "tag": "gc:georegions/canada/qc-24/la-matapedia-2407"
+  },
+  {
+    "name": "Matane",
+    "tag": "gc:georegions/canada/qc-24/matane-2408"
+  },
+  {
+    "name": "La Mitis",
+    "tag": "gc:georegions/canada/qc-24/la-mitis-2409"
+  },
+  {
+    "name": "Rimouski-Neigette",
+    "tag": "gc:georegions/canada/qc-24/rimouski-neigette-2410"
+  },
+  {
+    "name": "Les Basques",
+    "tag": "gc:georegions/canada/qc-24/les-basques-2411"
+  },
+  {
+    "name": "Rivière-du-Loup",
+    "tag": "gc:georegions/canada/qc-24/riviere-du-loup-2412"
+  },
+  {
+    "name": "Témiscouata",
+    "tag": "gc:georegions/canada/qc-24/temiscouata-2413"
+  },
+  {
+    "name": "Kamouraska",
+    "tag": "gc:georegions/canada/qc-24/kamouraska-2414"
+  },
+  {
+    "name": "Charlevoix-Est",
+    "tag": "gc:georegions/canada/qc-24/charlevoix-est-2415"
+  },
+  {
+    "name": "Charlevoix",
+    "tag": "gc:georegions/canada/qc-24/charlevoix-2416"
+  },
+  {
+    "name": "L'Islet",
+    "tag": "gc:georegions/canada/qc-24/lislet-2417"
+  },
+  {
+    "name": "Montmagny",
+    "tag": "gc:georegions/canada/qc-24/montmagny-2418"
+  },
+  {
+    "name": "Bellechasse",
+    "tag": "gc:georegions/canada/qc-24/bellechasse-2419"
+  },
+  {
+    "name": "L'Île-d'Orléans",
+    "tag": "gc:georegions/canada/qc-24/lile-dorleans-2420"
+  },
+  {
+    "name": "La Côte-de-Beaupré",
+    "tag": "gc:georegions/canada/qc-24/la-cote-de-beaupre-2421"
+  },
+  {
+    "name": "La Jacques-Cartier",
+    "tag": "gc:georegions/canada/qc-24/la-jacques-cartier-2422"
+  },
+  {
+    "name": "Québec",
+    "tag": "gc:georegions/canada/qc-24/quebec-2423"
+  },
+  {
+    "name": "Lévis",
+    "tag": "gc:georegions/canada/qc-24/levis-2425"
+  },
+  {
+    "name": "La Nouvelle-Beauce",
+    "tag": "gc:georegions/canada/qc-24/la-nouvelle-beauce-2426"
+  },
+  {
+    "name": "Robert-Cliche",
+    "tag": "gc:georegions/canada/qc-24/robert-cliche-2427"
+  },
+  {
+    "name": "Les Etchemins",
+    "tag": "gc:georegions/canada/qc-24/les-etchemins-2428"
+  },
+  {
+    "name": "Beauce-Sartigan",
+    "tag": "gc:georegions/canada/qc-24/beauce-sartigan-2429"
+  },
+  {
+    "name": "Le Granit",
+    "tag": "gc:georegions/canada/qc-24/le-granit-2430"
+  },
+  {
+    "name": "Les Appalaches",
+    "tag": "gc:georegions/canada/qc-24/les-appalaches-2431"
+  },
+  {
+    "name": "L'Érable",
+    "tag": "gc:georegions/canada/qc-24/lerable-2432"
+  },
+  {
+    "name": "Lotbinière",
+    "tag": "gc:georegions/canada/qc-24/lotbiniere-2433"
+  },
+  {
+    "name": "Portneuf",
+    "tag": "gc:georegions/canada/qc-24/portneuf-2434"
+  },
+  {
+    "name": "Mékinac",
+    "tag": "gc:georegions/canada/qc-24/mekinac-2435"
+  },
+  {
+    "name": "Shawinigan",
+    "tag": "gc:georegions/canada/qc-24/shawinigan-2436"
+  },
+  {
+    "name": "Francheville",
+    "tag": "gc:georegions/canada/qc-24/francheville-2437"
+  },
+  {
+    "name": "Bécancour",
+    "tag": "gc:georegions/canada/qc-24/becancour-2438"
+  },
+  {
+    "name": "Arthabaska",
+    "tag": "gc:georegions/canada/qc-24/arthabaska-2439"
+  },
+  {
+    "name": "Les Sources",
+    "tag": "gc:georegions/canada/qc-24/les-sources-2440"
+  },
+  {
+    "name": "Le Haut-Saint-François",
+    "tag": "gc:georegions/canada/qc-24/le-haut-saint-francois-2441"
+  },
+  {
+    "name": "Le Val-Saint-François",
+    "tag": "gc:georegions/canada/qc-24/le-val-saint-françois-2442"
+  },
+  {
+    "name": "Sherbrooke",
+    "tag": "gc:georegions/canada/qc-24/sherbrooke-2443"
+  },
+  {
+    "name": "Coaticook",
+    "tag": "gc:georegions/canada/qc-24/coaticook-2444"
+  },
+  {
+    "name": "Memphrémagog",
+    "tag": "gc:georegions/canada/qc-24/memphremagog-2445"
+  },
+  {
+    "name": "Brome-Missisquoi",
+    "tag": "gc:georegions/canada/qc-24/brome-missisquoi-2446"
+  },
+  {
+    "name": "La Haute-Yamaska",
+    "tag": "gc:georegions/canada/qc-24/la-haute-yamaska-2447"
+  },
+  {
+    "name": "Acton",
+    "tag": "gc:georegions/canada/qc-24/acton-2448"
+  },
+  {
+    "name": "Drummond",
+    "tag": "gc:georegions/canada/qc-24/drummond-2449"
+  },
+  {
+    "name": "Nicolet-Yamaska",
+    "tag": "gc:georegions/canada/qc-24/nicolet-yamaska-2450"
+  },
+  {
+    "name": "Maskinongé",
+    "tag": "gc:georegions/canada/qc-24/maskinonge-2451"
+  },
+  {
+    "name": "D'Autray",
+    "tag": "gc:georegions/canada/qc-24/dautray-2452"
+  },
+  {
+    "name": "Pierre-De Saurel",
+    "tag": "gc:georegions/canada/qc-24/pierre-de-saurel-2453"
+  },
+  {
+    "name": "Les Maskoutains",
+    "tag": "gc:georegions/canada/qc-24/les-maskoutains-2454"
+  },
+  {
+    "name": "Rouville",
+    "tag": "gc:georegions/canada/qc-24/rouville-2455"
+  },
+  {
+    "name": "Le Haut-Richelieu",
+    "tag": "gc:georegions/canada/qc-24/le-haut-richelieu-2456"
+  },
+  {
+    "name": "La Vallée-du-Richelieu",
+    "tag": "gc:georegions/canada/qc-24/la-vallee-du-richelieu-2457"
+  },
+  {
+    "name": "Longueuil",
+    "tag": "gc:georegions/canada/qc-24/longueuil-2458"
+  },
+  {
+    "name": "Marguerite-D'Youville",
+    "tag": "gc:georegions/canada/qc-24/lajemmerais-2459"
+  },
+  {
+    "name": "L'Assomption",
+    "tag": "gc:georegions/canada/qc-24/lassomption-2460"
+  },
+  {
+    "name": "Joliette",
+    "tag": "gc:georegions/canada/qc-24/joliette-2461"
+  },
+  {
+    "name": "Matawinie",
+    "tag": "gc:georegions/canada/qc-24/matawinie-2462"
+  },
+  {
+    "name": "Montcalm",
+    "tag": "gc:georegions/canada/qc-24/montcalm-2463"
+  },
+  {
+    "name": "Les Moulins",
+    "tag": "gc:georegions/canada/qc-24/les-moulins-2464"
+  },
+  {
+    "name": "Laval",
+    "tag": "gc:georegions/canada/qc-24/laval-2465"
+  },
+  {
+    "name": "Montréal",
+    "tag": "gc:georegions/canada/qc-24/montreal-2466"
+  },
+  {
+    "name": "Roussillon",
+    "tag": "gc:georegions/canada/qc-24/roussillon-2467"
+  },
+  {
+    "name": "Les Jardins-de-Napierville",
+    "tag": "gc:georegions/canada/qc-24/les-jardins-de-napierville-2468"
+  },
+  {
+    "name": "Le Haut-Saint-Laurent",
+    "tag": "gc:georegions/canada/qc-24/le-haut-saint-laurent-2469"
+  },
+  {
+    "name": "Beauharnois-Salaberry",
+    "tag": "gc:georegions/canada/qc-24/beauharnois-salaberry-2470"
+  },
+  {
+    "name": "Vaudreuil-Soulanges",
+    "tag": "gc:georegions/canada/qc-24/vaudreuil-soulanges-2471"
+  },
+  {
+    "name": "Deux-Montagnes",
+    "tag": "gc:georegions/canada/qc-24/deux-montagnes-2472"
+  },
+  {
+    "name": "Thérèse-De Blainville",
+    "tag": "gc:georegions/canada/qc-24/therese-de-blainville-2473"
+  },
+  {
+    "name": "Mirabel",
+    "tag": "gc:georegions/canada/qc-24/mirabel-2474"
+  },
+  {
+    "name": "La Rivière-du-Nord",
+    "tag": "gc:georegions/canada/qc-24/la-riviere-du-nord-2475"
+  },
+  {
+    "name": "Argenteuil",
+    "tag": "gc:georegions/canada/qc-24/argenteuil-2476"
+  },
+  {
+    "name": "Les Pays-d'en-Haut",
+    "tag": "gc:georegions/canada/qc-24/les-pays-den-haut-2477"
+  },
+  {
+    "name": "Les Laurentides",
+    "tag": "gc:georegions/canada/qc-24/les-laurentides-2478"
+  },
+  {
+    "name": "Antoine-Labelle",
+    "tag": "gc:georegions/canada/qc-24/antoine-labelle-2479"
+  },
+  {
+    "name": "Papineau",
+    "tag": "gc:georegions/canada/qc-24/papineau-2480"
+  },
+  {
+    "name": "Gatineau",
+    "tag": "gc:georegions/canada/qc-24/gatineau-2481"
+  },
+  {
+    "name": "Les Collines-de-l'Outaouais",
+    "tag": "gc:georegions/canada/qc-24/les-collines-de-loutaouais-2482"
+  },
+  {
+    "name": "La Vallée-de-la-Gatineau",
+    "tag": "gc:georegions/canada/qc-24/la-vallee-de-la-gatineau-2483"
+  },
+  {
+    "name": "Pontiac",
+    "tag": "gc:georegions/canada/qc-24/pontiac-2484"
+  },
+  {
+    "name": "Témiscamingue",
+    "tag": "gc:georegions/canada/qc-24/temiscamingue-2485"
+  },
+  {
+    "name": "Rouyn-Noranda",
+    "tag": "gc:georegions/canada/qc-24/rouyn-noranda-2486"
+  },
+  {
+    "name": "Abitibi-Ouest",
+    "tag": "gc:georegions/canada/qc-24/abitibi-ouest-2487"
+  },
+  {
+    "name": "Abitibi",
+    "tag": "gc:georegions/canada/qc-24/abitibi-2488"
+  },
+  {
+    "name": "La Vallée-de-l'Or",
+    "tag": "gc:georegions/canada/qc-24/la-vallee-de-lor-2489"
+  },
+  {
+    "name": "La Tuque",
+    "tag": "gc:georegions/canada/qc-24/la-tuque-2490"
+  },
+  {
+    "name": "Le Domaine-du-Roy",
+    "tag": "gc:georegions/canada/qc-24/le-domaine-du-roy-2491"
+  },
+  {
+    "name": "Maria-Chapdelaine",
+    "tag": "gc:georegions/canada/qc-24/maria-chapdelaine-2492"
+  },
+  {
+    "name": "Lac-Saint-Jean-Est",
+    "tag": "gc:georegions/canada/qc-24/lac-saint-jean-est-2493"
+  },
+  {
+    "name": "Le Saguenay-et-son-Fjord",
+    "tag": "gc:georegions/canada/qc-24/le-saguenay-et-son-fjord-2494"
+  },
+  {
+    "name": "La Haute-Côte-Nord",
+    "tag": "gc:georegions/canada/qc-24/la-haute-cote-nord-2495"
+  },
+  {
+    "name": "Manicouagan",
+    "tag": "gc:georegions/canada/qc-24/manicouagan-2496"
+  },
+  {
+    "name": "Sept-Rivières--Caniapiscau",
+    "tag": "gc:georegions/canada/qc-24/sept-rivieres--caniapiscau-2497"
+  },
+  {
+    "name": "Minganie--Le Golfe-du-Saint-Laurent",
+    "tag": "gc:georegions/canada/qc-24/minganie--le-golfe-du-saint-laurent-2498"
+  },
+  {
+    "name": "Nord-du-Québec",
+    "tag": "gc:georegions/canada/qc-24/nord-du-quebec-2499"
+  },
+  {
+    "name": "Ontario",
+    "tag": "gc:georegions/canada/on-35"
+  },
+  {
+    "name": "Stormont Dundas and Glengarry",
+    "tag": "gc:georegions/canada/on-35/stormont-dundas-and-glengarry-3501"
+  },
+  {
+    "name": "Prescott and Russell",
+    "tag": "gc:georegions/canada/on-35/prescott-and-russell-3502"
+  },
+  {
+    "name": "Ottawa",
+    "tag": "gc:georegions/canada/on-35/ottawa-3506"
+  },
+  {
+    "name": "Leeds and Grenville",
+    "tag": "gc:georegions/canada/on-35/leeds-and-grenville-3507"
+  },
+  {
+    "name": "Lanark",
+    "tag": "gc:georegions/canada/on-35/lanark-3509"
+  },
+  {
+    "name": "Frontenac",
+    "tag": "gc:georegions/canada/on-35/frontenac-3510"
+  },
+  {
+    "name": "Lennox and Addington",
+    "tag": "gc:georegions/canada/on-35/lennox-and-addington-3511"
+  },
+  {
+    "name": "Hastings",
+    "tag": "gc:georegions/canada/on-35/hastings-3512"
+  },
+  {
+    "name": "Prince Edward",
+    "tag": "gc:georegions/canada/on-35/prince-edward-3513"
+  },
+  {
+    "name": "Northumberland",
+    "tag": "gc:georegions/canada/on-35/northumberland-3514"
+  },
+  {
+    "name": "Peterborough",
+    "tag": "gc:georegions/canada/on-35/peterborough-3515"
+  },
+  {
+    "name": "Kawartha Lakes",
+    "tag": "gc:georegions/canada/on-35/kawartha-lakes-3516"
+  },
+  {
+    "name": "Durham",
+    "tag": "gc:georegions/canada/on-35/durham-3518"
+  },
+  {
+    "name": "York",
+    "tag": "gc:georegions/canada/on-35/york-3519"
+  },
+  {
+    "name": "Toronto",
+    "tag": "gc:georegions/canada/on-35/toronto-3520"
+  },
+  {
+    "name": "Peel",
+    "tag": "gc:georegions/canada/on-35/peel-3521"
+  },
+  {
+    "name": "Dufferin",
+    "tag": "gc:georegions/canada/on-35/dufferin-3522"
+  },
+  {
+    "name": "Wellington",
+    "tag": "gc:georegions/canada/on-35/wellington-3523"
+  },
+  {
+    "name": "Halton",
+    "tag": "gc:georegions/canada/on-35/halton-3524"
+  },
+  {
+    "name": "Hamilton",
+    "tag": "gc:georegions/canada/on-35/hamilton-3525"
+  },
+  {
+    "name": "Niagara",
+    "tag": "gc:georegions/canada/on-35/niagara-3526"
+  },
+  {
+    "name": "Haldimand-Norfolk",
+    "tag": "gc:georegions/canada/on-35/haldimand-norfolk-3528"
+  },
+  {
+    "name": "Brant",
+    "tag": "gc:georegions/canada/on-35/brant-3529"
+  },
+  {
+    "name": "Waterloo",
+    "tag": "gc:georegions/canada/on-35/waterloo-3530"
+  },
+  {
+    "name": "Perth",
+    "tag": "gc:georegions/canada/on-35/perth-3531"
+  },
+  {
+    "name": "Oxford",
+    "tag": "gc:georegions/canada/on-35/oxford-3532"
+  },
+  {
+    "name": "Elgin",
+    "tag": "gc:georegions/canada/on-35/elgin-3534"
+  },
+  {
+    "name": "Chatham-Kent",
+    "tag": "gc:georegions/canada/on-35/chatham-kent-3536"
+  },
+  {
+    "name": "Essex",
+    "tag": "gc:georegions/canada/on-35/essex-3537"
+  },
+  {
+    "name": "Lambton",
+    "tag": "gc:georegions/canada/on-35/lambton-3538"
+  },
+  {
+    "name": "Middlesex",
+    "tag": "gc:georegions/canada/on-35/middlesex-3539"
+  },
+  {
+    "name": "Huron",
+    "tag": "gc:georegions/canada/on-35/huron-3540"
+  },
+  {
+    "name": "Bruce",
+    "tag": "gc:georegions/canada/on-35/bruce-3541"
+  },
+  {
+    "name": "Grey",
+    "tag": "gc:georegions/canada/on-35/grey-3542"
+  },
+  {
+    "name": "Simcoe",
+    "tag": "gc:georegions/canada/on-35/simcoe-3543"
+  },
+  {
+    "name": "Muskoka",
+    "tag": "gc:georegions/canada/on-35/muskoka-3544"
+  },
+  {
+    "name": "Haliburton",
+    "tag": "gc:georegions/canada/on-35/haliburton-3546"
+  },
+  {
+    "name": "Renfrew",
+    "tag": "gc:georegions/canada/on-35/renfrew-3547"
+  },
+  {
+    "name": "Nipissing",
+    "tag": "gc:georegions/canada/on-35/nipissing-3548"
+  },
+  {
+    "name": "Parry Sound",
+    "tag": "gc:georegions/canada/on-35/parry-sound-3549"
+  },
+  {
+    "name": "Manitoulin",
+    "tag": "gc:georegions/canada/on-35/manitoulin-3551"
+  },
+  {
+    "name": "Sudbury",
+    "tag": "gc:georegions/canada/on-35/sudbury-3552"
+  },
+  {
+    "name": "Greater Sudbury",
+    "tag": "gc:georegions/canada/on-35/greater-sudbury-3553"
+  },
+  {
+    "name": "Timiskaming",
+    "tag": "gc:georegions/canada/on-35/timiskaming-3554"
+  },
+  {
+    "name": "Cochrane",
+    "tag": "gc:georegions/canada/on-35/cochrane-3556"
+  },
+  {
+    "name": "Algoma",
+    "tag": "gc:georegions/canada/on-35/algoma-3557"
+  },
+  {
+    "name": "Thunder Bay",
+    "tag": "gc:georegions/canada/on-35/thunder-bay-3558"
+  },
+  {
+    "name": "Rainy River",
+    "tag": "gc:georegions/canada/on-35/rainy-river-3559"
+  },
+  {
+    "name": "Kenora",
+    "tag": "gc:georegions/canada/on-35/kenora-3560"
+  },
+  {
+    "name": "Prairies",
+    "tag": "gc:georegions/canada/prairies-4"
+  },
+  {
+    "name": "Manitoba",
+    "tag": "gc:georegions/canada/prairies-4/mb-46"
+  },
+  {
+    "name": "Division No. 1",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-1-4601"
+  },
+  {
+    "name": "Division No. 2",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-2-4602"
+  },
+  {
+    "name": "Division No. 3",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-3-4603"
+  },
+  {
+    "name": "Division No. 4",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-4-4604"
+  },
+  {
+    "name": "Division No. 5",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-5-4605"
+  },
+  {
+    "name": "Division No. 6",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-6-4606"
+  },
+  {
+    "name": "Division No. 7",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-7-4607"
+  },
+  {
+    "name": "Division No. 8",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-8-4608"
+  },
+  {
+    "name": "Division No. 9",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-9-4609"
+  },
+  {
+    "name": "Division No. 10",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-10-4610"
+  },
+  {
+    "name": "Division No. 11",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-11-4611"
+  },
+  {
+    "name": "Division No. 12",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-12-4612"
+  },
+  {
+    "name": "Division No. 13",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-13-4613"
+  },
+  {
+    "name": "Division No. 14",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-14-4614"
+  },
+  {
+    "name": "Division No. 15",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-15-4615"
+  },
+  {
+    "name": "Division No. 16",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-16-4616"
+  },
+  {
+    "name": "Division No. 17",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-17-4617"
+  },
+  {
+    "name": "Division No. 18",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-18-4618"
+  },
+  {
+    "name": "Division No. 19",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-19-4619"
+  },
+  {
+    "name": "Division No. 20",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-20-4620"
+  },
+  {
+    "name": "Division No. 21",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-21-4621"
+  },
+  {
+    "name": "Division No. 22",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-22-4622"
+  },
+  {
+    "name": "Division No. 23",
+    "tag": "gc:georegions/canada/prairies-4/mb-46/division-no-23-4623"
+  },
+  {
+    "name": "Saskatchewan",
+    "tag": "gc:georegions/canada/prairies-4/sk-47"
+  },
+  {
+    "name": "Division No. 1",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-1-4701"
+  },
+  {
+    "name": "Division No. 2",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-2-4702"
+  },
+  {
+    "name": "Division No. 3",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-3-4703"
+  },
+  {
+    "name": "Division No. 4",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-4-4704"
+  },
+  {
+    "name": "Division No. 5",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-5-4705"
+  },
+  {
+    "name": "Division No. 6",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-6-4706"
+  },
+  {
+    "name": "Division No. 7",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-7-4707"
+  },
+  {
+    "name": "Division No. 8",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-8-4708"
+  },
+  {
+    "name": "Division No. 9",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-9-4709"
+  },
+  {
+    "name": "Division No. 10",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-10-4710"
+  },
+  {
+    "name": "Division No. 11",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-11-4711"
+  },
+  {
+    "name": "Division No. 12",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-12-4712"
+  },
+  {
+    "name": "Division No. 13",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-13-4713"
+  },
+  {
+    "name": "Division No. 14",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-14-4714"
+  },
+  {
+    "name": "Division No. 15",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-15-4715"
+  },
+  {
+    "name": "Division No. 16",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-16-4716"
+  },
+  {
+    "name": "Division No. 17",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-17-4717"
+  },
+  {
+    "name": "Division No. 18",
+    "tag": "gc:georegions/canada/prairies-4/sk-47/division-no-18-4718"
+  },
+  {
+    "name": "Alberta",
+    "tag": "gc:georegions/canada/prairies-4/ab-48"
+  },
+  {
+    "name": "Division No. 1",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-1-4801"
+  },
+  {
+    "name": "Division No. 2",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-2-4802"
+  },
+  {
+    "name": "Division No. 3",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-3-4803"
+  },
+  {
+    "name": "Division No. 4",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-4-4804"
+  },
+  {
+    "name": "Division No. 5",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-5-4805"
+  },
+  {
+    "name": "Division No. 6",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-6-4806"
+  },
+  {
+    "name": "Division No. 7",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-7-4807"
+  },
+  {
+    "name": "Division No. 8",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-8-4808"
+  },
+  {
+    "name": "Division No. 9",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-9-4809"
+  },
+  {
+    "name": "Division No. 10",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-10-4810"
+  },
+  {
+    "name": "Division No. 11",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-11-4811"
+  },
+  {
+    "name": "Division No. 12",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-12-4812"
+  },
+  {
+    "name": "Division No. 13",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-13-4813"
+  },
+  {
+    "name": "Division No. 14",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-14-4814"
+  },
+  {
+    "name": "Division No. 15",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-15-4815"
+  },
+  {
+    "name": "Division No. 16",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-16-4816"
+  },
+  {
+    "name": "Division No. 17",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-17-4817"
+  },
+  {
+    "name": "Division No. 18",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-18-4818"
+  },
+  {
+    "name": "Division No. 19",
+    "tag": "gc:georegions/canada/prairies-4/ab-48/division-no-19-4819"
+  },
+  {
+    "name": "Afghanistan",
+    "tag": "gc:georegions/afghanistan"
+  },
+  {
+    "name": "Albania",
+    "tag": "gc:georegions/albania"
+  },
+  {
+    "name": "Algeria",
+    "tag": "gc:georegions/algeria"
+  },
+  {
+    "name": "Andorra",
+    "tag": "gc:georegions/andorra"
+  },
+  {
+    "name": "Angola",
+    "tag": "gc:georegions/angola"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "tag": "gc:georegions/antigua-and-barbuda"
+  },
+  {
+    "name": "Argentina",
+    "tag": "gc:georegions/argentina"
+  },
+  {
+    "name": "Armenia",
+    "tag": "gc:georegions/armenia"
+  },
+  {
+    "name": "Australia",
+    "tag": "gc:georegions/australia"
+  },
+  {
+    "name": "Austria",
+    "tag": "gc:georegions/austria"
+  },
+  {
+    "name": "Azerbaijan",
+    "tag": "gc:georegions/azerbaijan"
+  },
+  {
+    "name": "Bahamas",
+    "tag": "gc:georegions/bahamas"
+  },
+  {
+    "name": "Bahrain",
+    "tag": "gc:georegions/bahrain"
+  },
+  {
+    "name": "Bangladesh",
+    "tag": "gc:georegions/bangladesh"
+  },
+  {
+    "name": "Barbados",
+    "tag": "gc:georegions/barbados"
+  },
+  {
+    "name": "Belarus",
+    "tag": "gc:georegions/belarus"
+  },
+  {
+    "name": "Belgium",
+    "tag": "gc:georegions/belgium"
+  },
+  {
+    "name": "Belize",
+    "tag": "gc:georegions/belize"
+  },
+  {
+    "name": "Benin",
+    "tag": "gc:georegions/benin"
+  },
+  {
+    "name": "Bhutan",
+    "tag": "gc:georegions/bhutan"
+  },
+  {
+    "name": "Bolivia (Plurinational State of)",
+    "tag": "gc:georegions/bolivia-plurinational-state-of"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "tag": "gc:georegions/bosnia-and-herzegovina"
+  },
+  {
+    "name": "Botswana",
+    "tag": "gc:georegions/botswana"
+  },
+  {
+    "name": "Brazil",
+    "tag": "gc:georegions/brazil"
+  },
+  {
+    "name": "Brunei Darussalam",
+    "tag": "gc:georegions/brunei-darussalam"
+  },
+  {
+    "name": "Bulgaria",
+    "tag": "gc:georegions/bulgaria"
+  },
+  {
+    "name": "Burkina Faso",
+    "tag": "gc:georegions/burkina-faso"
+  },
+  {
+    "name": "Burundi",
+    "tag": "gc:georegions/burundi"
+  },
+  {
+    "name": "Cabo Verde",
+    "tag": "gc:georegions/cabo-verde"
+  },
+  {
+    "name": "Cambodia",
+    "tag": "gc:georegions/cambodia"
+  },
+  {
+    "name": "Cameroon",
+    "tag": "gc:georegions/cameroon"
+  },
+  {
+    "name": "Central African Republic",
+    "tag": "gc:georegions/central-african-republic"
+  },
+  {
+    "name": "Chad",
+    "tag": "gc:georegions/chad"
+  },
+  {
+    "name": "Chile",
+    "tag": "gc:georegions/chile"
+  },
+  {
+    "name": "China",
+    "tag": "gc:georegions/china"
+  },
+  {
+    "name": "China, Macao Special Administrative Region",
+    "tag": "gc:georegions/china-macao-special-administrative-region"
+  },
+  {
+    "name": "Colombia",
+    "tag": "gc:georegions/colombia"
+  },
+  {
+    "name": "Comoros",
+    "tag": "gc:georegions/comoros"
+  },
+  {
+    "name": "Congo",
+    "tag": "gc:georegions/congo"
+  },
+  {
+    "name": "Costa Rica",
+    "tag": "gc:georegions/costa-rica"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "tag": "gc:georegions/cote-d-ivoire"
+  },
+  {
+    "name": "Croatia",
+    "tag": "gc:georegions/croatia"
+  },
+  {
+    "name": "Cuba",
+    "tag": "gc:georegions/cuba"
+  },
+  {
+    "name": "Cyprus",
+    "tag": "gc:georegions/cyprus"
+  },
+  {
+    "name": "Czechia",
+    "tag": "gc:georegions/czechia"
+  },
+  {
+    "name": "Democratic People's Republic of Korea (North Korea)",
+    "tag": "gc:georegions/democratic-peoples-republic-of-korea"
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "tag": "gc:georegions/democratic-republic-of-the-congo"
+  },
+  {
+    "name": "Denmark",
+    "tag": "gc:georegions/denmark"
+  },
+  {
+    "name": "Djibouti",
+    "tag": "gc:georegions/djibouti"
+  },
+  {
+    "name": "Dominica",
+    "tag": "gc:georegions/dominica"
+  },
+  {
+    "name": "Dominican Republic",
+    "tag": "gc:georegions/dominican-republic"
+  },
+  {
+    "name": "Ecuador",
+    "tag": "gc:georegions/ecuador"
+  },
+  {
+    "name": "Egypt",
+    "tag": "gc:georegions/egypt"
+  },
+  {
+    "name": "El Salvador",
+    "tag": "gc:georegions/el-salvador"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "tag": "gc:georegions/equatorial-guinea"
+  },
+  {
+    "name": "Eritrea",
+    "tag": "gc:georegions/eritrea"
+  },
+  {
+    "name": "Estonia",
+    "tag": "gc:georegions/estonia"
+  },
+  {
+    "name": "Eswatini",
+    "tag": "gc:georegions/eswatini"
+  },
+  {
+    "name": "Ethiopia",
+    "tag": "gc:georegions/ethiopia"
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "tag": "gc:georegions/falkland-islands-malvinas"
+  },
+  {
+    "name": "Fiji",
+    "tag": "gc:georegions/fiji"
+  },
+  {
+    "name": "Finland",
+    "tag": "gc:georegions/finland"
+  },
+  {
+    "name": "France",
+    "tag": "gc:georegions/france"
+  },
+  {
+    "name": "Gabon",
+    "tag": "gc:georegions/gabon"
+  },
+  {
+    "name": "Gambia",
+    "tag": "gc:georegions/gambia"
+  },
+  {
+    "name": "Georgia",
+    "tag": "gc:georegions/georgia"
+  },
+  {
+    "name": "Germany",
+    "tag": "gc:georegions/germany"
+  },
+  {
+    "name": "Ghana",
+    "tag": "gc:georegions/ghana"
+  },
+  {
+    "name": "Greece",
+    "tag": "gc:georegions/greece"
+  },
+  {
+    "name": "Grenada",
+    "tag": "gc:georegions/grenada"
+  },
+  {
+    "name": "Guatemala",
+    "tag": "gc:georegions/guatemala"
+  },
+  {
+    "name": "Guinea",
+    "tag": "gc:georegions/guinea"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "tag": "gc:georegions/guinea-bissau"
+  },
+  {
+    "name": "Guyana",
+    "tag": "gc:georegions/guyana"
+  },
+  {
+    "name": "Haiti",
+    "tag": "gc:georegions/haiti"
+  },
+  {
+    "name": "Honduras",
+    "tag": "gc:georegions/honduras"
+  },
+  {
+    "name": "Hungary",
+    "tag": "gc:georegions/hungary"
+  },
+  {
+    "name": "Iceland",
+    "tag": "gc:georegions/iceland"
+  },
+  {
+    "name": "India",
+    "tag": "gc:georegions/india"
+  },
+  {
+    "name": "Indonesia",
+    "tag": "gc:georegions/indonesia"
+  },
+  {
+    "name": "Iran (Islamic Republic of)",
+    "tag": "gc:georegions/iran-islamic-republic-of"
+  },
+  {
+    "name": "Iraq",
+    "tag": "gc:georegions/iraq"
+  },
+  {
+    "name": "Ireland",
+    "tag": "gc:georegions/ireland"
+  },
+  {
+    "name": "Israel",
+    "tag": "gc:georegions/israel"
+  },
+  {
+    "name": "Italy",
+    "tag": "gc:georegions/italy"
+  },
+  {
+    "name": "Jamaica",
+    "tag": "gc:georegions/jamaica"
+  },
+  {
+    "name": "Japan",
+    "tag": "gc:georegions/japan"
+  },
+  {
+    "name": "Jordan",
+    "tag": "gc:georegions/jordan"
+  },
+  {
+    "name": "Kazakhstan",
+    "tag": "gc:georegions/kazakhstan"
+  },
+  {
+    "name": "Kenya",
+    "tag": "gc:georegions/kenya"
+  },
+  {
+    "name": "Kiribati",
+    "tag": "gc:georegions/kiribati"
+  },
+  {
+    "name": "Kuwait",
+    "tag": "gc:georegions/kuwait"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "tag": "gc:georegions/kyrgyzstan"
+  },
+  {
+    "name": "Lao People's Democratic Republic",
+    "tag": "gc:georegions/lao-peoples-democratic-republic"
+  },
+  {
+    "name": "Latvia",
+    "tag": "gc:georegions/latvia"
+  },
+  {
+    "name": "Lebanon",
+    "tag": "gc:georegions/lebanon"
+  },
+  {
+    "name": "Lesotho",
+    "tag": "gc:georegions/lesotho"
+  },
+  {
+    "name": "Liberia",
+    "tag": "gc:georegions/liberia"
+  },
+  {
+    "name": "Libya",
+    "tag": "gc:georegions/libya"
+  },
+  {
+    "name": "Liechtenstein",
+    "tag": "gc:georegions/liechtenstein"
+  },
+  {
+    "name": "Lithuania",
+    "tag": "gc:georegions/lithuania"
+  },
+  {
+    "name": "Luxembourg",
+    "tag": "gc:georegions/luxembourg"
+  },
+  {
+    "name": "Madagascar",
+    "tag": "gc:georegions/madagascar"
+  },
+  {
+    "name": "Malawi",
+    "tag": "gc:georegions/malawi"
+  },
+  {
+    "name": "Malaysia",
+    "tag": "gc:georegions/malaysia"
+  },
+  {
+    "name": "Maldives",
+    "tag": "gc:georegions/maldives"
+  },
+  {
+    "name": "Mali",
+    "tag": "gc:georegions/mali"
+  },
+  {
+    "name": "Malta",
+    "tag": "gc:georegions/malta"
+  },
+  {
+    "name": "Marshall Islands",
+    "tag": "gc:georegions/marshall-islands"
+  },
+  {
+    "name": "Mauritania",
+    "tag": "gc:georegions/mauritania"
+  },
+  {
+    "name": "Mauritius",
+    "tag": "gc:georegions/mauritius"
+  },
+  {
+    "name": "Mexico",
+    "tag": "gc:georegions/mexico"
+  },
+  {
+    "name": "Micronesia (Federated States of)",
+    "tag": "gc:georegions/micronesia-federated-states-of"
+  },
+  {
+    "name": "Monaco",
+    "tag": "gc:georegions/monaco"
+  },
+  {
+    "name": "Mongolia",
+    "tag": "gc:georegions/mongolia"
+  },
+  {
+    "name": "Montenegro",
+    "tag": "gc:georegions/montenegro"
+  },
+  {
+    "name": "Morocco",
+    "tag": "gc:georegions/morocco"
+  },
+  {
+    "name": "Mozambique",
+    "tag": "gc:georegions/mozambique"
+  },
+  {
+    "name": "Myanmar",
+    "tag": "gc:georegions/myanmar"
+  },
+  {
+    "name": "Namibia",
+    "tag": "gc:georegions/namibia"
+  },
+  {
+    "name": "Nauru",
+    "tag": "gc:georegions/nauru"
+  },
+  {
+    "name": "Nepal",
+    "tag": "gc:georegions/nepal"
+  },
+  {
+    "name": "Netherlands",
+    "tag": "gc:georegions/netherlands"
+  },
+  {
+    "name": "New Zealand",
+    "tag": "gc:georegions/new-zealand"
+  },
+  {
+    "name": "Nicaragua",
+    "tag": "gc:georegions/nicaragua"
+  },
+  {
+    "name": "Niger",
+    "tag": "gc:georegions/niger"
+  },
+  {
+    "name": "Nigeria",
+    "tag": "gc:georegions/nigeria"
+  },
+  {
+    "name": "North Macedonia",
+    "tag": "gc:georegions/north-macedonia"
+  },
+  {
+    "name": "Norway",
+    "tag": "gc:georegions/norway"
+  },
+  {
+    "name": "Oman",
+    "tag": "gc:georegions/oman"
+  },
+  {
+    "name": "Pakistan",
+    "tag": "gc:georegions/pakistan"
+  },
+  {
+    "name": "Palau",
+    "tag": "gc:georegions/palau"
+  },
+  {
+    "name": "Panama",
+    "tag": "gc:georegions/panama"
+  },
+  {
+    "name": "Papua New Guinea",
+    "tag": "gc:georegions/papua-new-guinea"
+  },
+  {
+    "name": "Paraguay",
+    "tag": "gc:georegions/paraguay"
+  },
+  {
+    "name": "Peru",
+    "tag": "gc:georegions/peru"
+  },
+  {
+    "name": "Philippines",
+    "tag": "gc:georegions/philippines"
+  },
+  {
+    "name": "Poland",
+    "tag": "gc:georegions/poland"
+  },
+  {
+    "name": "Portugal",
+    "tag": "gc:georegions/portugal"
+  },
+  {
+    "name": "Qatar",
+    "tag": "gc:georegions/qatar"
+  },
+  {
+    "name": "Republic of Korea (South Korea)",
+    "tag": "gc:georegions/republic-of-korea"
+  },
+  {
+    "name": "Republic of Moldova",
+    "tag": "gc:georegions/republic-of-moldova"
+  },
+  {
+    "name": "Romania",
+    "tag": "gc:georegions/romania"
+  },
+  {
+    "name": "Russian Federation",
+    "tag": "gc:georegions/russian-federation"
+  },
+  {
+    "name": "Rwanda",
+    "tag": "gc:georegions/rwanda"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "tag": "gc:georegions/saint-kitts-and-nevis"
+  },
+  {
+    "name": "Saint Lucia",
+    "tag": "gc:georegions/saint-lucia"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "tag": "gc:georegions/saint-vincent-and-the-grenadines"
+  },
+  {
+    "name": "Samoa",
+    "tag": "gc:georegions/samoa"
+  },
+  {
+    "name": "San Marino",
+    "tag": "gc:georegions/san-marino"
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "tag": "gc:georegions/sao-tome-and-principe"
+  },
+  {
+    "name": "Saudi Arabia",
+    "tag": "gc:georegions/saudi-arabia"
+  },
+  {
+    "name": "Senegal",
+    "tag": "gc:georegions/senegal"
+  },
+  {
+    "name": "Serbia",
+    "tag": "gc:georegions/serbia"
+  },
+  {
+    "name": "Seychelles",
+    "tag": "gc:georegions/seychelles"
+  },
+  {
+    "name": "Sierra Leone",
+    "tag": "gc:georegions/sierra-leone"
+  },
+  {
+    "name": "Singapore",
+    "tag": "gc:georegions/singapore"
+  },
+  {
+    "name": "Slovakia",
+    "tag": "gc:georegions/slovakia"
+  },
+  {
+    "name": "Slovenia",
+    "tag": "gc:georegions/slovenia"
+  },
+  {
+    "name": "Solomon Islands",
+    "tag": "gc:georegions/solomon-islands"
+  },
+  {
+    "name": "Somalia",
+    "tag": "gc:georegions/somalia"
+  },
+  {
+    "name": "South Africa",
+    "tag": "gc:georegions/south-africa"
+  },
+  {
+    "name": "South Sudan",
+    "tag": "gc:georegions/south-sudan"
+  },
+  {
+    "name": "Spain",
+    "tag": "gc:georegions/spain"
+  },
+  {
+    "name": "Sri Lanka",
+    "tag": "gc:georegions/sri-lanka"
+  },
+  {
+    "name": "Sudan",
+    "tag": "gc:georegions/sudan"
+  },
+  {
+    "name": "Suriname",
+    "tag": "gc:georegions/suriname"
+  },
+  {
+    "name": "Sweden",
+    "tag": "gc:georegions/sweden"
+  },
+  {
+    "name": "Switzerland",
+    "tag": "gc:georegions/switzerland"
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "tag": "gc:georegions/syrian-arab-republic"
+  },
+  {
+    "name": "Tajikistan",
+    "tag": "gc:georegions/tajikistan"
+  },
+  {
+    "name": "Thailand",
+    "tag": "gc:georegions/thailand"
+  },
+  {
+    "name": "Timor-Leste",
+    "tag": "gc:georegions/timor-leste"
+  },
+  {
+    "name": "Togo",
+    "tag": "gc:georegions/togo"
+  },
+  {
+    "name": "Tonga",
+    "tag": "gc:georegions/tonga"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "tag": "gc:georegions/trinidad-and-tobago"
+  },
+  {
+    "name": "Tunisia",
+    "tag": "gc:georegions/tunisia"
+  },
+  {
+    "name": "Türkiye",
+    "tag": "gc:georegions/turkey"
+  },
+  {
+    "name": "Turkmenistan",
+    "tag": "gc:georegions/turkmenistan"
+  },
+  {
+    "name": "Tuvalu",
+    "tag": "gc:georegions/tuvalu"
+  },
+  {
+    "name": "Uganda",
+    "tag": "gc:georegions/uganda"
+  },
+  {
+    "name": "Ukraine",
+    "tag": "gc:georegions/ukraine"
+  },
+  {
+    "name": "United Arab Emirates",
+    "tag": "gc:georegions/united-arab-emirates"
+  },
+  {
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "tag": "gc:georegions/united-kingdom-of-great-britain-and-northern-ireland"
+  },
+  {
+    "name": "United Republic of Tanzania",
+    "tag": "gc:georegions/united-republic-of-tanzania"
+  },
+  {
+    "name": "United States of America",
+    "tag": "gc:georegions/united-states-of-america"
+  },
+  {
+    "name": "Uruguay",
+    "tag": "gc:georegions/uruguay"
+  },
+  {
+    "name": "Uzbekistan",
+    "tag": "gc:georegions/uzbekistan"
+  },
+  {
+    "name": "Vanuatu",
+    "tag": "gc:georegions/vanuatu"
+  },
+  {
+    "name": "Venezuela (Bolivarian Republic of)",
+    "tag": "gc:georegions/venezuela-bolivarian-republic-of"
+  },
+  {
+    "name": "Viet Nam",
+    "tag": "gc:georegions/viet-nam"
+  },
+  {
+    "name": "Yemen",
+    "tag": "gc:georegions/yemen"
+  },
+  {
+    "name": "Zambia",
+    "tag": "gc:georegions/zambia"
+  },
+  {
+    "name": "Zimbabwe",
+    "tag": "gc:georegions/zimbabwe"
+  },
+  {
+    "name": "American Samoa",
+    "tag": "gc:georegions/american-samoa"
+  },
+  {
+    "name": "Anguilla",
+    "tag": "gc:georegions/anguilla"
+  },
+  {
+    "name": "Antarctica",
+    "tag": "gc:georegions/antarctica"
+  },
+  {
+    "name": "Aruba",
+    "tag": "gc:georegions/aruba"
+  },
+  {
+    "name": "Bermuda",
+    "tag": "gc:georegions/bermuda"
+  },
+  {
+    "name": "Bonaire",
+    "tag": "gc:georegions/bonaire"
+  },
+  {
+    "name": "British Virgin Islands",
+    "tag": "gc:georegions/british-virgin-islands"
+  },
+  {
+    "name": "Cayman Islands",
+    "tag": "gc:georegions/cayman-islands"
+  },
+  {
+    "name": "Cook Islands",
+    "tag": "gc:georegions/cook-islands"
+  },
+  {
+    "name": "Curaçao",
+    "tag": "gc:georegions/curacao"
+  },
+  {
+    "name": "French Guiana",
+    "tag": "gc:georegions/french-guiana"
+  },
+  {
+    "name": "French Polynesia",
+    "tag": "gc:georegions/french-polynesia"
+  },
+  {
+    "name": "Gibraltar",
+    "tag": "gc:georegions/gibraltar"
+  },
+  {
+    "name": "Greenland",
+    "tag": "gc:georegions/greenland"
+  },
+  {
+    "name": "Guadeloupe",
+    "tag": "gc:georegions/guadeloupe"
+  },
+  {
+    "name": "Guam",
+    "tag": "gc:georegions/guam"
+  },
+  {
+    "name": "Hong Kong",
+    "tag": "gc:georegions/hong-kong"
+  },
+  {
+    "name": "Martinique",
+    "tag": "gc:georegions/martinique"
+  },
+  {
+    "name": "Mayotte",
+    "tag": "gc:georegions/mayotte"
+  },
+  {
+    "name": "Montserrat",
+    "tag": "gc:georegions/montserrat"
+  },
+  {
+    "name": "New Caledonia",
+    "tag": "gc:georegions/new-caledonia"
+  },
+  {
+    "name": "Niue",
+    "tag": "gc:georegions/niue"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "tag": "gc:georegions/northern-mariana-islands"
+  },
+  {
+    "name": "Puerto Rico",
+    "tag": "gc:georegions/puerto-rico"
+  },
+  {
+    "name": "Réunion",
+    "tag": "gc:georegions/reunion"
+  },
+  {
+    "name": "Saint Martin",
+    "tag": "gc:georegions/saint-martin"
+  },
+  {
+    "name": "Saint-Barthélemy",
+    "tag": "gc:georegions/saint-barthelemy"
+  },
+  {
+    "name": "Saint-Pierre-et-Miquelon",
+    "tag": "gc:georegions/saint-pierre-et-miquelon"
+  },
+  {
+    "name": "Sint Maarten",
+    "tag": "gc:georegions/sint-maarten"
+  },
+  {
+    "name": "Tokelau",
+    "tag": "gc:georegions/tokelau"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "tag": "gc:georegions/turks-and-caicos-islands"
+  },
+  {
+    "name": "US Virgin Islands",
+    "tag": "gc:georegions/united-states-virgin-islands"
+  },
+  {
+    "name": "Azores",
+    "tag": "gc:georegions/azores"
+  },
+  {
+    "name": "Canary Islands",
+    "tag": "gc:georegions/canary-islands"
+  },
+  {
+    "name": "Kosovo",
+    "tag": "gc:georegions/kosovo"
+  },
+  {
+    "name": "Taiwan",
+    "tag": "gc:georegions/taiwan"
+  },
+  {
+    "name": "West Bank and the Gaza Strip",
+    "tag": "gc:georegions/west-bank-and-the-gaza-strip"
+  }
+]
