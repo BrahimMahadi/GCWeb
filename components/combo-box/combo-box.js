@@ -224,6 +224,17 @@ class ComboBoxComponent extends HTMLElement {
 					</div>
 				</div>
 
+				<ul
+					id="combo-box-list"
+					class="combo-box-list"
+					role="listbox"
+					aria-multiselectable="true"
+				aria-label="${ this.escapeHtml( this.constructor.defaults.i18n[ this.pageLanguage ].availableOptions ) }"
+					hidden
+				>
+					<!-- Options will be dynamically inserted here -->
+				</ul>
+
 				<!-- Live region for screen reader announcements -->
 				<div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 			</div>
@@ -335,8 +346,11 @@ class ComboBoxComponent extends HTMLElement {
 				break;
 			case "Escape":
 				e.preventDefault();
-				this.closeList();
-				this.input.value = "";
+				if ( this.isOpen ) {
+					this.closeList();
+				} else {
+					this.input.value = "";
+				}
 				break;
 			case "Backspace":
 				if ( this.input.value === "" && this.selectedItems.length > 0 ) {
@@ -413,6 +427,15 @@ class ComboBoxComponent extends HTMLElement {
 		}
 	}
 
+	// Dispatches the change event for external listeners
+	dispatchChangeEvent() {
+		this.dispatchEvent( new CustomEvent( "change", {
+			detail: { selectedItems: [ ...this.selectedItems ] },
+			bubbles: true,
+			composed: true
+		} ) );
+	}
+
 	// Adds a selected option
 	selectOption( value ) {
 		const option = this.allOptions.find( o => o.value === value );
@@ -443,12 +466,8 @@ class ComboBoxComponent extends HTMLElement {
 			// Announce selection to screen readers
 			this.announce( `${ option.label }` + `${ this.constructor.defaults.i18n[ this.pageLanguage ].selected }` );
 
-			// Dispatch custom event for external listeners
-			this.dispatchEvent( new CustomEvent( "change", {
-				detail: { selectedItems: [ ...this.selectedItems ] },
-				bubbles: true,
-				composed: true
-			} ) );
+			// Dispatch change event
+			this.dispatchChangeEvent();
 
 			this.syncHiddenInputs();
 		}
@@ -478,12 +497,8 @@ class ComboBoxComponent extends HTMLElement {
 		// Announce removal to screen readers
 		this.announce( `${ option.label }` + `${ this.constructor.defaults.i18n[ this.pageLanguage ].removed }` );
 
-		// Dispatch custom event for external listeners
-		this.dispatchEvent( new CustomEvent( "change", {
-			detail: { selectedItems: [ ...this.selectedItems ] },
-			bubbles: true,
-			composed: true
-		} ) );
+		// Dispatch change event
+		this.dispatchChangeEvent();
 
 		this.syncHiddenInputs();
 	}
@@ -633,11 +648,8 @@ class ComboBoxComponent extends HTMLElement {
 		// Update select all checkbox state
 		this.updateSelectAllCheckbox();
 
-		this.dispatchEvent( new CustomEvent( "change", {
-			detail: { selectedItems: [ ...this.selectedItems ] },
-			bubbles: true,
-			composed: true
-		} ) );
+		// Dispatch change event
+		this.dispatchChangeEvent();
 	}
 
 	// Handles select all / unselect all functionality
@@ -664,12 +676,8 @@ class ComboBoxComponent extends HTMLElement {
 		// Announce action to screen readers
 		this.announce( `${ this.constructor.defaults.i18n[ this.pageLanguage ].allOptionsSelected }` );
 
-		// Dispatch custom event
-		this.dispatchEvent( new CustomEvent( "change", {
-			detail: { selectedItems: [ ...this.selectedItems ] },
-			bubbles: true,
-			composed: true
-		} ) );
+		// Dispatch change event
+		this.dispatchChangeEvent();
 	}
 
 	// Unselects all options
@@ -687,12 +695,8 @@ class ComboBoxComponent extends HTMLElement {
 		// Announce action to screen readers
 		this.announce( `${ this.constructor.defaults.i18n[ this.pageLanguage ].allOptionsDeselected }` );
 
-		// Dispatch custom event
-		this.dispatchEvent( new CustomEvent( "change", {
-			detail: { selectedItems: [ ...this.selectedItems ] },
-			bubbles: true,
-			composed: true
-		} ) );
+		// Dispatch change event
+		this.dispatchChangeEvent();
 	}
 
 	// Disables the combo-box input
