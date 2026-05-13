@@ -1,11 +1,13 @@
 ---
 title: Composant Combo Box Web accessible
-dateModified: 2026-04-22
+dateModified: 2026-05-13
 description: "Un composant combo-box accessible qui met en œuvre les normes d'accessibilité WCAG 2.1 et offre une interface moderne et conviviale pour sélectionner plusieurs éléments."
 lang: fr
 altLangPage: combo-box-en.html
 ---
-<div class="mrgn-bttm-lg"></div>
+<p>Un composant combo-box accessible qui met en œuvre les normes d'accessibilité WCAG 2.1 et offre une interface moderne et conviviale pour sélectionner plusieurs éléments dans une liste déroulante. Ce composant prend en charge la sélection multiple, la navigation au clavier et le support complet des lecteurs d'écran.</p>
+
+<h2>Exemple 1 : Options provenant d'une API avec étiquette dans un slot</h2>
 <gc-combobox
 	id="demo-regions"
 	placeholder="Sélectionner région(s)..."
@@ -13,11 +15,30 @@ altLangPage: combo-box-en.html
 	options="https://api.io.canada.ca/io-server/gc/news/institutions-and-regions-tags/v1/fr/regions">
 	<span slot="label">Sélectionner région(s)</span>
 </gc-combobox>
-<br>
+
+<h2>Exemple 2 : Options provenant d'un slot</h2>
+<gc-combobox id="demo-slot-options" placeholder="Sélectionner fruit(s)..." name="fruits">
+	<span slot="label">Sélectionnez votre fruit préféré</span>
+	<select slot="options">
+		<option value="apple">Pomme</option>
+		<option value="banana">Banane</option>
+		<option value="orange">Orange</option>
+		<option value="grape">Raisin</option>
+	</select>
+</gc-combobox>
+
+<h2>Exemple 3 : Étiquette en tant qu'attribut (pas un slot)</h2>
 <gc-combobox
-	id="demo-institutions"
-	name="institutions"
+	id="demo-label-attr"
 	placeholder="Sélectionner institution(s)..."
+	name="institutions-attr"
+	label="Sélectionner institution(s)"
+	options="https://api.io.canada.ca/io-server/gc/news/institutions-and-regions-tags/v1/fr/institutions"></gc-combobox>
+
+<h2>Exemple 4 : Sans espace réservé</h2>
+<gc-combobox
+	id="demo-no-placeholder"
+	name="institutions"
 	options="https://api.io.canada.ca/io-server/gc/news/institutions-and-regions-tags/v1/fr/institutions">
 	<span slot="label">Sélectionner institution(s)</span>
 </gc-combobox>

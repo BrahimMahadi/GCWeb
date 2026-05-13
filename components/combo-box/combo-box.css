@@ -48,10 +48,13 @@
 }
 
 .combo-box-label {
-	display: block;
-	font-size: 14px;
-	font-weight: 500;
+	color: #333;
+	display: inline-block;
+	font-size: 1.25rem;
+	font-weight: 700;
 	margin-bottom: 8px;
+	max-width: 100%;
+	padding-right: 15px;
 }
 
 .combo-box-list {
@@ -125,19 +128,32 @@
 		}
 	}
 
+	&.combo-box-option-select-all {
+		background-color: #f5f5f5;
+		border-bottom: 1px solid #ddd;
+		font-weight: 600;
+		padding: 8px 12px;
+
+		&:hover {
+			background-color: #efefef;
+		}
+
+		&[aria-selected="true"] {
+			background-color: #e8e8e8;
+		}
+	}
+
 	&:focus {
 		outline: none;
 	}
 }
 
 .combo-box-wrapper {
+	margin-bottom: 30px;
 	position: relative;
 	width: 100%;
 }
 
-.select-all-label {
-	font-size: 14px;
-}
 
 .sr-only {
 	position: absolute;
@@ -152,21 +168,35 @@
 }
 
 .tag {
-	align-items: center;
-	background-color: #e6e6e6;
-	border-radius: 3px;
-	color: #333;
-	display: inline-flex;
-	font-size: 14px;
-	font-weight: 500;
-	gap: 6px;
-	padding: 4px 8px;
-	font-family: inherit;
-	border: none;
+	background: #eee;
+	border-color: #acacac;
+	border-radius: 0;
+	border-style: solid;
+	border-width: 0 0 0 4px;
+	color: #000;
 	cursor: pointer;
+	display: inline;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	padding: .2em .6em .3em;
+	text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
 
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.15);
+	}
+
+	&.tag-all-options {
+		background-color: #007bff;
+		border-color: #0056b3;
+		color: #fff;
+		font-weight: 600;
+
+		&:hover {
+			background-color: #0056b3;
+		}
 	}
 }
 
