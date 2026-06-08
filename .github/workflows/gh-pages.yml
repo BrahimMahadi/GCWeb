@@ -43,7 +43,7 @@ jobs:
 
       # Necessary in order to build Jekyll
       - name: Setup Ruby
-        uses: ruby/setup-ruby@3ff19f5e2baf30647122352b96108b1fbe250c64 # v1.299.0
+        uses: ruby/setup-ruby@afeafc3d1ab54a631816aba4c914a0081c12ff2f # v1.310.0
         with:
           ruby-version: '3.3'
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
@@ -63,7 +63,7 @@ jobs:
       # Zip the ./_site/ folder as an artifact
       - name: Upload static files as artifact
         id: deployment
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./_site/
 
