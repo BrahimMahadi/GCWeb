@@ -1,6 +1,6 @@
 {
   "name": "GCWeb",
-  "version": "19.7.1",
+  "version": "20.0.0",
   "description": "Web Experience Toolkit (WET): Canada.ca Theme Reorg",
   "main": "index.html",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "3.4.3",
-    "wet-boew": "github:wet-boew/wet-boew#v4.0.98"
+    "wet-boew": "github:wet-boew/wet-boew#v4.0.98.1"
   },
   "peerDependencies": {
     "@cdssnc/gcds-components": "1.0.0"
@@ -35,13 +35,13 @@
     "ie > 10"
   ],
   "devDependencies": {
-    "@double-great/stylelint-a11y": "^3.5.2",
+    "@double-great/stylelint-a11y": "^3.8.1",
     "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
     "@lodder/grunt-postcss": "^3.0.1",
-    "autoprefixer": "^10.5.4",
-    "coffeescript": "^2.7.0",
-    "eslint": "^10.9.1",
+    "autoprefixer": "^10.6.2",
+    "coffeescript": "^2.7.1",
+    "eslint": "^10.13.0",
     "eslint-config-jquery": "^3.0.2",
     "globals": "^17.11.0",
     "grunt": "^1.6.3",
@@ -55,18 +55,18 @@
     "grunt-eslint": "^27.0.0",
     "grunt-html": "^18.1.0",
     "grunt-jsonlint": "^3.0.0",
-    "grunt-lintspaces": "^1.0.0",
+    "grunt-lintspaces": "^2.0.0",
     "grunt-markdownlint": "^3.1.6",
     "grunt-sass": "^4.1.0",
     "grunt-sri": "^0.2.0",
     "grunt-stylelint": "^0.21.0",
-    "js-yaml": "^5.4.1",
+    "js-yaml": "^5.5.0",
     "load-grunt-tasks": "^5.1.0",
-    "postcss": "^8.5.25",
-    "sass": "^1.103.1",
+    "postcss": "^8.5.32",
+    "sass": "^1.107.0",
     "stylelint": "^17.14.1",
     "stylelint-config-standard-scss": "^17.0.0",
-    "stylelint-order": "^8.1.1",
+    "stylelint-order": "^8.1.2",
     "time-grunt": "^2.0.0"
   }
 }

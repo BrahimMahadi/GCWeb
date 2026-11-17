@@ -1151,54 +1151,55 @@ module.exports = (grunt) ->
 		jsonlint:
 			all:
 				src: [
-					"{sites,common,components,templates,design-patterns,wet-boew}/**/*.json",
-					"{sites,common,components,templates,design-patterns,wet-boew}/**/*.json-ld"
+					"**/*.json",
+					"**/*.json-ld"
+					"!package*.json",
+					"!**/**/bad-json-content*.json"
+					"!node_modules/**"
+					"!dist/**"
+					"!_site/**"
+					"!~sites/**"
+					"!_wetboew-demos/**"
+					"!~jekyll-dist/**"
 				]
-				options: {
+				options:
 					indent: "\t"
-				}
+
+			fix:
+				src: [
+					"<%= jsonlint.all.src %>"
+					"!_data/**"
+				]
+				options:
+					format: true
+					prettyPrint: true
+					indent: "\t"
 
 		lintspaces:
 			all:
 				src: [
 						# Root files
-						".editorconfig"
-						".git*"
-						".*rc"
-						"*.yml"
-						"Gemfile*"
-						"Gruntfile.coffee"
-						"Licen?e-*.txt"
-						"*.json"
-						# "*.json-ld"
-						"Rakefile"
+						"\.*"
+						"**"
 
-						# Folders
-						"{sites,common,components,templates,design-patterns,wet-boew}/**"
-
-						#
 						# Exemptions...
-						#
+						"!**/*.min.*"
+						"!**/*.lock"
+						"!node_modules/**"
+						"!~jekyll-dist/**"
+						"!_wetboew-demos/**"
+						"!dist/**"
+						"!méli-mélo/compilation-gelé/**"
+						"!méli-mélo-demos/**"
+						"!~sites/**"
+						"!_site/**"
+						"!_data/**"
 
-						# Generated files
-						"!Gemfile.lock"
-
-						# Web contents
-						"!{_site,sites,common,components,templates,design-patterns,wet-boew}/**/*.md"
-						# "{sites,components,templatesdesign-patterns}/*/*.{md,html}"
-						# "{sites,components,templatesdesign-patterns}/*.{md, html}"
-						# "!{sites,components,templatesdesign-patterns}/*/**/*.{md,html}"
-
-						# Images
-						"!{sites,common,components,templates,design-patterns,wet-boew}/**/*.{jpg,png,ico}"
-						"!{sites,common,components,templates,design-patterns,wet-boew}/*.{ico,jpg,png}"
-
-						# External fonts
-						"!{sites,common,components,templates,design-patterns,wet-boew}/**/*.{eot,svg,ttf,woff}"
-
-						# Docker environment file
-						# File that gets created/populated in a manner that goes against .editorconfig settings during the main Travis-CI build.
-						"!script/docker/env"
+						# Binary files
+						"!**/*.{jpg,png,ico}"
+						"!**/*.{eot,ttf,woff}"
+						"!**/*.odt"
+						"!.DS_Store"
 					],
 				options:
 					editorconfig: ".editorconfig",
